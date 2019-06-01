@@ -6,6 +6,7 @@ import java.util.Random;
 import javax.annotation.Nullable;
 
 import com.google.common.base.Predicate;
+import com.turtywurty.vanillaexpansion.init.BlockInit;
 
 import net.minecraft.block.ITileEntityProvider;
 import net.minecraft.block.material.Material;
@@ -70,7 +71,7 @@ public class BlockBluestoneComparator extends BlockBluestoneDiode implements ITi
         Boolean obool = (Boolean)unpoweredState.getValue(POWERED);
         BlockBluestoneComparator.Mode blockbluestonecomparator$mode = (BlockBluestoneComparator.Mode)unpoweredState.getValue(MODE);
         EnumFacing enumfacing = (EnumFacing)unpoweredState.getValue(FACING);
-        return Blocks.POWERED_COMPARATOR.getDefaultState().withProperty(FACING, enumfacing).withProperty(POWERED, obool).withProperty(MODE, blockbluestonecomparator$mode);
+        return BlockInit.BLUESTONE_COMPARATOR.getDefaultState().withProperty(FACING, enumfacing).withProperty(POWERED, obool).withProperty(MODE, blockbluestonecomparator$mode);
     }
 
     protected IBlockState getUnpoweredState(IBlockState poweredState)
@@ -78,7 +79,7 @@ public class BlockBluestoneComparator extends BlockBluestoneDiode implements ITi
         Boolean obool = (Boolean)poweredState.getValue(POWERED);
         BlockBluestoneComparator.Mode blockbluestonecomparator$mode = (BlockBluestoneComparator.Mode)poweredState.getValue(MODE);
         EnumFacing enumfacing = (EnumFacing)poweredState.getValue(FACING);
-        return Blocks.UNPOWERED_COMPARATOR.getDefaultState().withProperty(FACING, enumfacing).withProperty(POWERED, obool).withProperty(MODE, blockbluestonecomparator$mode);
+        return BlockInit.UNPOWERED_BLUESTONE_COMPARATOR.getDefaultState().withProperty(FACING, enumfacing).withProperty(POWERED, obool).withProperty(MODE, blockbluestonecomparator$mode);
     }
 
     protected boolean isPowered(IBlockState state)

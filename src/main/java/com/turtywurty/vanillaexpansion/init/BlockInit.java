@@ -45,5 +45,6 @@ public class BlockInit
 	public static final Block POWERED_BLUESTONE_REPEATER = new BlockBluestoneRepeater("powered_bluestone_repeater", true).setLightLevel(0.5f);
 	public static final Block UNLIT_BLUESTONE_REPEATER = new BlockBluestoneRepeater("unpowered_bluestone_repeater", false).setCreativeTab(TAB);
 	public static final Block BLUESTONE_BLOCK = new BlockBluestone("bluestone_block").setCreativeTab(TAB);
-	public static final Block BLUESTONE_COMPARATOR = new BlockBluestoneComparator("bluestone_comparator", true).setCreativeTab(TAB);
+	public static final Block BLUESTONE_COMPARATOR = new BlockBluestoneComparator("powered_bluestone_comparator", true).setLightLevel(0.5f);
+	public static final Block UNPOWERED_BLUESTONE_COMPARATOR = new BlockBluestoneComparator("unpowered_bluestone_comparator", true).setCreativeTab(TAB);
 }
