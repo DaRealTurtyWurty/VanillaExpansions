@@ -3,7 +3,7 @@
     "textures": {
         "particle": "vanillaexpansion:blocks/bluestone_comparator_on",
         "slab": "blocks/stone_slab_top",
-        "top": "vanillaexpansion:blocks/bluestonecomparator_on",
+        "top": "vanillaexpansion:blocks/bluestone_comparator_on",
         "unlit": "vanillaexpansion:blocks/bluestone_torch_off",
         "lit": "vanillaexpansion:blocks/bluestone_torch_on"
     },

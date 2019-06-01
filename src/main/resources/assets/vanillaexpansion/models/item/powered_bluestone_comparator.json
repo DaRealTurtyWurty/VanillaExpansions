@@ -1,6 +1,6 @@
 {
     "parent": "item/generated",
     "textures": {
-        "layer0": "vanillaexpansion:items/unpowered_bluestone_comparator"
+        "layer0": "vanillaexpansion:items/powered_bluestone_comparator"
     }
 }
