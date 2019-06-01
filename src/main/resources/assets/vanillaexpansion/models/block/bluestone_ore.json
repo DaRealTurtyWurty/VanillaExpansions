@@ -1,0 +1,13 @@
+{
+   "parent": "block/cube",
+   "textures": 
+   {
+       "particle": "vanillaexpansion:blocks/bluestone_ore",
+       "up": "vanillaexpansion:blocks/bluestone_ore",
+       "down": "vanillaexpansion:blocks/bluestone_ore",
+       "east": "vanillaexpansion:blocks/bluestone_ore",
+       "west": "vanillaexpansion:blocks/bluestone_ore",
+       "north": "vanillaexpansion:blocks/bluestone_ore",
+       "south": "vanillaexpansion:blocks/bluestone_ore"
+   }
+}

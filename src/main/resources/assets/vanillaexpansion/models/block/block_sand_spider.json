@@ -1,0 +1,13 @@
+{
+   "parent": "block/cube",
+   "textures": 
+   {
+       "particle": "blocks/sand",
+       "up": "vanillaexpansion:blocks/block_sand_spider",
+       "down": "blocks/sand",
+       "east": "blocks/sand",
+       "west": "blocks/sand",
+       "north": "blocks/sand",
+       "south": "blocks/sand"
+   }
+}

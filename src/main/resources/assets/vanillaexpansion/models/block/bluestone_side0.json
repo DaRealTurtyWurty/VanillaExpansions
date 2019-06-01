@@ -1,0 +1,6 @@
+{
+    "parent": "vanillaexpansion:block/bluestone_side",
+    "textures": {
+        "line": "vanillaexpansion:blocks/bluestone_line0"
+    }
+}

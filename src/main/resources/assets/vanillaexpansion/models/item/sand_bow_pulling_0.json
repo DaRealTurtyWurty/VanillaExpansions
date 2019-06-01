@@ -1,0 +1,7 @@
+{
+    "parent": "item/bow",
+    "textures": 
+    {
+        "layer0": "vanillaexpansion:items/sand_bow_pulling_0"
+    }
+}

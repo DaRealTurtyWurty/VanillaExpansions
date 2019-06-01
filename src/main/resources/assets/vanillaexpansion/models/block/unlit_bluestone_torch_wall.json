@@ -1,0 +1,6 @@
+{
+    "parent": "block/torch_wall",
+    "textures": {
+        "torch": "vanillaexpansion:blocks/bluestone_torch_off"
+    }
+}

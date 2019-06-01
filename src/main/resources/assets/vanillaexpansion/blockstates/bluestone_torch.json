@@ -1,0 +1,9 @@
+{
+    "variants": {
+        "facing=up":  { "model": "vanillaexpansion:lit_bluestone_torch" },
+        "facing=east":  { "model": "vanillaexpansion:lit_bluestone_torch_wall" },
+        "facing=south":  { "model": "vanillaexpansion:lit_bluestone_torch_wall", "y": 90 },
+        "facing=west":  { "model": "vanillaexpansion:lit_bluestone_torch_wall", "y": 180 },
+        "facing=north":  { "model": "vanillaexpansion:lit_bluestone_torch_wall", "y": 270 }
+    }
+}

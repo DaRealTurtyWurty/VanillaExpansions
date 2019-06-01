@@ -1,0 +1,30 @@
+{
+    "type": "minecraft:crafting_shaped",
+   
+    "pattern":
+    [
+        "S#S",
+        "#S#",
+        "S#S"
+    ],
+   
+    "key":
+    {
+        "S":
+        {
+            "item": "vanillaexpansion:sandy_string"
+        },
+        
+        "#":
+        {
+            "item": "minecraft:sand",
+            "data": 0
+        }
+    },
+   
+    "result":
+    {
+        "item": "vanillaexpansion:stabilized_sand",
+        "count": 1
+    }
+}

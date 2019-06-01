@@ -1,0 +1,50 @@
+//Items
+item.sand_arrow.name=Sandy Arrow
+item.sand_bow.name=Sandy Bow
+item.sandy_shirt.name=Sandy Shirt
+item.mod_logo.name=Mod Logo
+item.sarcophagus.name=Sarcophagus
+
+//Blocks
+tile.block_sand_spider.name=Spider Sand
+tile.sandy_string.name=Sandy String
+tile.stabilized_sand.name=Binded Sand
+tile.sandstone_wall.name=Sandstone Wall
+tile.spike_trap.name=Spike Trap
+tile.spike_trap_down.name=Spike Trap Down
+tile.bluestone.name=Bluestone Dust
+tile.bluestone_ore.name=Bluestone Ore
+tile.lit_bluestone_ore.name=Lit Bluestone Ore
+tile.bluestone_torch.name=Bluestone Torch
+tile.unlit_bluestone_torch.name=Unlit Bluestone Torch
+tile.bluestone_block.name=Bluestone Block
+
+//World Types
+generator.Biome Overhaul=Vanilla Expansion
+
+//Entities
+entity.sand_spider.name=Sand Spider
+entity.sandy_skeleton.name=Sandy Skeleton
+entity.sand.name=Sandy Arrow
+entity.sand_creeper.name=Sand Creeper
+entity.sand_cat.name=Sand Cat
+entity.mummy.name=Mummy
+
+//Item Tiles
+item.item.sand_arrow=Sand Arrow
+item.item.sand_bow=Sandy Bow
+item.item.sandy_shirt=Sandy Shirt
+item.tile.block_sand_spider=Spider Sand
+item.tile.sandy_string=Sandy String
+item.tile.stabilized_sand=Binded Sand
+item.item.monsterPlacer=Spawn Egg
+item.tile.sandstone_wall=Sandstone Wall
+item.tile.spike_trap=Spike Trap
+item.tile.spike_trap_down=Spike Trap Down
+item.item.sarcophagus=Sarcophagus
+
+//Damage Sources
+death.attack.spike_trap=%1$s needs to watch their step next time!
+
+//Tabs
+itemGroup.vanilla_expansion=Vanilla Expansion Tab

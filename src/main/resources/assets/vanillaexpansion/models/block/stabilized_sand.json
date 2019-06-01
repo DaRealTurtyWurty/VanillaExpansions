@@ -1,0 +1,13 @@
+{
+   "parent": "block/cube",
+   "textures": 
+   {
+       "particle": "vanillaexpansion:blocks/stabilized_sand",
+       "up": "vanillaexpansion:blocks/stabilized_sand",
+       "down": "vanillaexpansion:blocks/stabilized_sand",
+       "east": "blocks/sand",
+       "west": "blocks/sand",
+       "north": "vanillaexpansion:blocks/stabilized_sand",
+       "south": "vanillaexpansion:blocks/stabilized_sand"
+   }
+}
