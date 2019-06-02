@@ -1,0 +1,6 @@
+{
+    "variants": {
+        "powered=false": { "model": "vanillaexpansion:sandstone_pressure_plate_up" },
+        "powered=true": { "model": "vanillaexpansion:sandstone_pressure_plate_down" }
+    }
+}

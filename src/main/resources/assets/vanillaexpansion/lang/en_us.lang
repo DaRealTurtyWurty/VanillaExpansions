@@ -20,6 +20,7 @@ tile.unlit_bluestone_torch.name=Unlit Bluestone Torch
 tile.bluestone_block.name=Bluestone Block
 tile.unpowered_bluestone_repeater.name=Bluestone Repeater
 tile.unpowered_bluestone_comparator.name=Bluestone Comparator
+tile.sandstone_pressure_plate.name=Sandstone Pressure Plate
 
 //World Types
 generator.Biome Overhaul=Vanilla Expansion

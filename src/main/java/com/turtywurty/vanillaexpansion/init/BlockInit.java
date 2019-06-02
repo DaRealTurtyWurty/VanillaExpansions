@@ -5,6 +5,7 @@ import java.util.List;
 
 import com.turtywurty.vanillaexpansion.VanillaExpansion;
 import com.turtywurty.vanillaexpansion.objects.blocks.desert.BlockSandSpider;
+import com.turtywurty.vanillaexpansion.objects.blocks.desert.BlockSandstonePressurePlate;
 import com.turtywurty.vanillaexpansion.objects.blocks.desert.BlockSandstoneWall;
 import com.turtywurty.vanillaexpansion.objects.blocks.desert.BlockSandyString;
 import com.turtywurty.vanillaexpansion.objects.blocks.desert.BlockSarcophagus;
@@ -25,26 +26,27 @@ import net.minecraft.init.Blocks;
 
 public class BlockInit 
 {
-	static CreativeTabs TAB = VanillaExpansion.VANILLAEXPANSIONTAB;
+	static CreativeTabs tab = VanillaExpansion.VANILLAEXPANSIONTAB;
 	public static final List<Block> BLOCKS = new ArrayList<Block>();
 	
-	public static final Block SAND_SPIDER = new BlockSandSpider("block_sand_spider").setCreativeTab(TAB);
-	public static final Block SANDY_STRING = new BlockSandyString("sandy_string", Material.WEB).setCreativeTab(TAB);
-	public static final Block STABILIZED_SAND = new BlockStabilizedSand("stabilized_sand").setCreativeTab(TAB);
-	public static final Block SANDSTONE_WALL = new BlockSandstoneWall("sandstone_wall", Blocks.SANDSTONE).setCreativeTab(TAB);
-	public static final Block SPIKE_TRAP = new BlockSpikeTrap("spike_trap").setCreativeTab(TAB);
+	public static final Block SAND_SPIDER = new BlockSandSpider("block_sand_spider").setCreativeTab(tab);
+	public static final Block SANDY_STRING = new BlockSandyString("sandy_string", Material.WEB).setCreativeTab(tab);
+	public static final Block STABILIZED_SAND = new BlockStabilizedSand("stabilized_sand").setCreativeTab(tab);
+	public static final Block SANDSTONE_WALL = new BlockSandstoneWall("sandstone_wall", Blocks.SANDSTONE).setCreativeTab(tab);
+	public static final Block SPIKE_TRAP = new BlockSpikeTrap("spike_trap").setCreativeTab(tab);
 	public static final Block SPIKE_TRAP_DOWN = new BlockSpikeTrapDown("spike_trap_down");
 	public static final Block SARCOPHAGUS = new BlockSarcophagus("sarcophagus_block");
+	public static final Block SANDSTONE_PRESSUREPLATE = new BlockSandstonePressurePlate("sandstone_pressure_plate", BlockSandstonePressurePlate.Sensitivity.MOBS).setCreativeTab(tab);
 	
 	//Bluestone
-	public static final Block BLUESTONE = new BlockBluestoneWire("bluestone").setCreativeTab(TAB);
-	public static final Block BLUESTONE_ORE = new BlockBluestoneOre("bluestone_ore", false).setCreativeTab(TAB);
+	public static final Block BLUESTONE = new BlockBluestoneWire("bluestone").setCreativeTab(tab);
+	public static final Block BLUESTONE_ORE = new BlockBluestoneOre("bluestone_ore", false).setCreativeTab(tab);
 	public static final Block LIT_BLUESTONE_ORE = new BlockBluestoneOre("lit_bluestone_ore", true).setLightLevel(0.625f);
 	public static final Block UNLIT_BLUESTONE_TORCH = new BlockBluestoneTorch("unlit_bluestone_torch", false);
-	public static final Block BLUESTONE_TORCH = new BlockBluestoneTorch("bluestone_torch", true).setLightLevel(0.75f).setCreativeTab(TAB);
+	public static final Block BLUESTONE_TORCH = new BlockBluestoneTorch("bluestone_torch", true).setLightLevel(0.75f).setCreativeTab(tab);
 	public static final Block POWERED_BLUESTONE_REPEATER = new BlockBluestoneRepeater("powered_bluestone_repeater", true).setLightLevel(0.5f);
-	public static final Block UNLIT_BLUESTONE_REPEATER = new BlockBluestoneRepeater("unpowered_bluestone_repeater", false).setCreativeTab(TAB);
-	public static final Block BLUESTONE_BLOCK = new BlockBluestone("bluestone_block").setCreativeTab(TAB);
+	public static final Block UNLIT_BLUESTONE_REPEATER = new BlockBluestoneRepeater("unpowered_bluestone_repeater", false).setCreativeTab(tab);
+	public static final Block BLUESTONE_BLOCK = new BlockBluestone("bluestone_block").setCreativeTab(tab);
 	public static final Block BLUESTONE_COMPARATOR = new BlockBluestoneComparator("powered_bluestone_comparator", true).setLightLevel(0.5f);
-	public static final Block UNPOWERED_BLUESTONE_COMPARATOR = new BlockBluestoneComparator("unpowered_bluestone_comparator", true).setCreativeTab(TAB);
+	public static final Block UNPOWERED_BLUESTONE_COMPARATOR = new BlockBluestoneComparator("unpowered_bluestone_comparator", true).setCreativeTab(tab);
 }
