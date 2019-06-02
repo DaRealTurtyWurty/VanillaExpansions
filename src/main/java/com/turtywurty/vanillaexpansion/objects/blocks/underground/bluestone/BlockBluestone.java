@@ -34,7 +34,7 @@ public class BlockBluestone extends Block
 	@Override
 	public boolean canProvidePower(IBlockState state) 
 	{
-		if(state.getBlock() == BlockInit.BLUESTONE || state.getBlock() == BlockInit.BLUESTONE_ORE || state.getBlock() == BlockInit.BLUESTONE_TORCH || state.getBlock() == BlockInit.UNLIT_BLUESTONE_REPEATER || state.getBlock() == BlockInit.UNLIT_BLUESTONE_TORCH || state.getBlock() == BlockInit.SPIKE_TRAP_DOWN || state.getBlock() == BlockInit.SPIKE_TRAP && state.getBlock() != Blocks.REDSTONE_WIRE)
+		if(state.getBlock() == BlockInit.BLUESTONE || state.getBlock() == BlockInit.BLUESTONE_ORE || state.getBlock() == BlockInit.BLUESTONE_TORCH || state.getBlock() == BlockInit.UNLIT_BLUESTONE_REPEATER || state.getBlock() == BlockInit.UNLIT_BLUESTONE_TORCH || state.getBlock() == BlockInit.SPIKE_TRAP_DOWN || state.getBlock() == BlockInit.SPIKE_TRAP || state.getBlock() == BlockInit.BLUESTONE_COMPARATOR || state.getBlock() == BlockInit.UNPOWERED_BLUESTONE_COMPARATOR && state.getBlock() != Blocks.REDSTONE_WIRE)
 		{
 			return true;	
 		}
