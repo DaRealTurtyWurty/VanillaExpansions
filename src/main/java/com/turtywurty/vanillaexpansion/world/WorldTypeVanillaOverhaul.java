@@ -1,11 +1,11 @@
 package com.turtywurty.vanillaexpansion.world;
 
-import com.turtywurty.vanillaexpansion.init.BiomeInit;
-
 import net.minecraft.world.World;
 import net.minecraft.world.WorldType;
 import net.minecraft.world.biome.BiomeProvider;
-import net.minecraft.world.biome.BiomeProviderSingle;
+import net.minecraft.world.gen.ChunkGeneratorSettings;
+import net.minecraft.world.gen.layer.GenLayer;
+import net.minecraft.world.storage.WorldInfo;
 
 public class WorldTypeVanillaOverhaul extends WorldType
 {
@@ -13,11 +13,10 @@ public class WorldTypeVanillaOverhaul extends WorldType
 	{
 		super(name);
 	}
-
+	
 	@Override
-	public BiomeProvider getBiomeProvider(World world) 
+	public GenLayer getBiomeLayer(long worldSeed, GenLayer parentLayer, ChunkGeneratorSettings chunkSettings) 
 	{
-		BiomeProvider provider = new BiomeProviderSingle(BiomeInit.NEW_DESERT);
-		return provider;
+		return new GenLayerOverhaul(worldSeed);
 	}
 }
