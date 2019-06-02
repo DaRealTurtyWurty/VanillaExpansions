@@ -215,7 +215,7 @@ public abstract class BlockBluestoneDiode extends BlockHorizontal
 
         if (this.isAlternateInput(iblockstate))
         {
-            if (block == BlockInit.BLUESTONE_BLOCK)
+            if(block == BlockInit.BLUESTONE_BLOCK)
             {
                 return 15;
             }

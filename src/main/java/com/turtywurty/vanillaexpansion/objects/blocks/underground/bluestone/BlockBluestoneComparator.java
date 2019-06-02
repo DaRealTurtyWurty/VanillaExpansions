@@ -53,12 +53,12 @@ public class BlockBluestoneComparator extends BlockBluestoneDiode implements ITi
      */
     public Item getItemDropped(IBlockState state, Random rand, int fortune)
     {
-        return Items.COMPARATOR;
+        return Item.getItemFromBlock(BlockInit.UNPOWERED_BLUESTONE_COMPARATOR);
     }
 
     public ItemStack getItem(World worldIn, BlockPos pos, IBlockState state)
     {
-        return new ItemStack(Items.COMPARATOR);
+        return new ItemStack(BlockInit.UNPOWERED_BLUESTONE_COMPARATOR);
     }
 
     protected int getDelay(IBlockState state)

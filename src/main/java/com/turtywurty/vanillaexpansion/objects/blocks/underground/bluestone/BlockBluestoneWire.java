@@ -439,7 +439,7 @@ public class BlockBluestoneWire extends Block
     {
         Block block = blockState.getBlock();
 
-        if(block == BlockInit.BLUESTONE || block == BlockInit.SPIKE_TRAP_DOWN || block == BlockInit.SPIKE_TRAP || block == BlockInit.BLUESTONE_TORCH || block == BlockInit.UNLIT_BLUESTONE_TORCH || block == BlockInit.BLUESTONE_BLOCK || block == BlockInit.POWERED_BLUESTONE_REPEATER || block == BlockInit.UNLIT_BLUESTONE_REPEATER)
+        if(block == BlockInit.BLUESTONE || block == BlockInit.SPIKE_TRAP_DOWN || block == BlockInit.SPIKE_TRAP || block == BlockInit.BLUESTONE_TORCH || block == BlockInit.UNLIT_BLUESTONE_TORCH || block == BlockInit.BLUESTONE_BLOCK || block == BlockInit.POWERED_BLUESTONE_REPEATER || block == BlockInit.UNLIT_BLUESTONE_REPEATER || block == BlockInit.BLUESTONE_COMPARATOR || block == BlockInit.UNPOWERED_BLUESTONE_COMPARATOR)
         {
             return true;
         }
