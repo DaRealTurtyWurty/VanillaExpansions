@@ -188,10 +188,10 @@ public class BlockSarcophagus extends BlockHorizontal implements ITileEntityProv
     /**
      * Get the Item that this Block should drop when harvested.
      */
-    public Item getItemDropped(IBlockState state, Random rand, int fortune)
+    /*public Item getItemDropped(IBlockState state, Random rand, int fortune)
     {
         return state.getValue(PART) == BlockSarcophagus.EnumPartType.FOOT ? Items.AIR : ItemInit.SARCOPHAGUS_PLACER;
-    }
+    }*/
 
     public AxisAlignedBB getBoundingBox(IBlockState state, IBlockAccess source, BlockPos pos)
     {
@@ -254,7 +254,7 @@ public class BlockSarcophagus extends BlockHorizontal implements ITileEntityProv
         if (state.getValue(PART) == BlockSarcophagus.EnumPartType.HEAD)
         {
             TileEntity tileentity = worldIn.getTileEntity(pos);
-            spawnAsEntity(worldIn, pos, new ItemStack(ItemInit.SARCOPHAGUS_PLACER));
+            //spawnAsEntity(worldIn, pos, new ItemStack(ItemInit.SARCOPHAGUS_PLACER));
         }
     }
 
@@ -274,7 +274,7 @@ public class BlockSarcophagus extends BlockHorizontal implements ITileEntityProv
         return EnumBlockRenderType.ENTITYBLOCK_ANIMATED;
     }
 
-    public ItemStack getItem(World worldIn, BlockPos pos, IBlockState state)
+    /*public ItemStack getItem(World worldIn, BlockPos pos, IBlockState state)
     {
         BlockPos blockpos = pos;
 
@@ -285,7 +285,7 @@ public class BlockSarcophagus extends BlockHorizontal implements ITileEntityProv
 
         TileEntity tileentity = worldIn.getTileEntity(blockpos);
         return new ItemStack(ItemInit.SARCOPHAGUS_PLACER);
-    }
+    }*/
 
     public void onBlockHarvested(World worldIn, BlockPos pos, IBlockState state, EntityPlayer player)
     {
@@ -305,8 +305,8 @@ public class BlockSarcophagus extends BlockHorizontal implements ITileEntityProv
         if (state.getValue(PART) == BlockSarcophagus.EnumPartType.HEAD && te instanceof TileEntitySarcophagus)
         {
             TileEntitySarcophagus tileentitysarcophagus = (TileEntitySarcophagus)te;
-            ItemStack itemstack = tileentitysarcophagus.getItemStack();
-            spawnAsEntity(worldIn, pos, itemstack);
+            //ItemStack itemstack = tileentitysarcophagus.getItemStack();
+            //spawnAsEntity(worldIn, pos, itemstack);
         }
         else
         {

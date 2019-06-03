@@ -69,11 +69,11 @@ public class ItemSarcophagusPlacer extends Item
 
                 if (flag2 && flag3 && worldIn.getBlockState(pos.down()).isTopSolid() && worldIn.getBlockState(blockpos.down()).isTopSolid())
                 {
-                    IBlockState iblockstate2 = BlockInit.SARCOPHAGUS.getDefaultState().withProperty(BlockSarcophagus.OCCUPIED, Boolean.valueOf(false)).withProperty(BlockSarcophagus.FACING, enumfacing).withProperty(BlockSarcophagus.PART, BlockSarcophagus.EnumPartType.FOOT);
-                    worldIn.setBlockState(pos, iblockstate2, 10);
-                    worldIn.setBlockState(blockpos, iblockstate2.withProperty(BlockSarcophagus.PART, BlockSarcophagus.EnumPartType.HEAD), 10);
-                    SoundType soundtype = iblockstate2.getBlock().getSoundType(iblockstate2, worldIn, pos, player);
-                    worldIn.playSound((EntityPlayer)null, pos, soundtype.getPlaceSound(), SoundCategory.BLOCKS, (soundtype.getVolume() + 1.0F) / 2.0F, soundtype.getPitch() * 0.8F);
+                    //IBlockState iblockstate2 = BlockInit.SARCOPHAGUS.getDefaultState().withProperty(BlockSarcophagus.OCCUPIED, Boolean.valueOf(false)).withProperty(BlockSarcophagus.FACING, enumfacing).withProperty(BlockSarcophagus.PART, BlockSarcophagus.EnumPartType.FOOT);
+                    //worldIn.setBlockState(pos, iblockstate2, 10);
+                    //worldIn.setBlockState(blockpos, iblockstate2.withProperty(BlockSarcophagus.PART, BlockSarcophagus.EnumPartType.HEAD), 10);
+                    //SoundType soundtype = iblockstate2.getBlock().getSoundType(iblockstate2, worldIn, pos, player);
+                    //worldIn.playSound((EntityPlayer)null, pos, soundtype.getPlaceSound(), SoundCategory.BLOCKS, (soundtype.getVolume() + 1.0F) / 2.0F, soundtype.getPitch() * 0.8F);
                     TileEntity tileentity = worldIn.getTileEntity(blockpos);
                     TileEntity tileentity1 = worldIn.getTileEntity(pos);
                     worldIn.notifyNeighborsRespectDebug(pos, block, false);

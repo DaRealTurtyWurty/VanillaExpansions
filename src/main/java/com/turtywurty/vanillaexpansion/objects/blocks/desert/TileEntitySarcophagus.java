@@ -20,8 +20,8 @@ public class TileEntitySarcophagus extends TileEntity
         return BlockSarcophagus.isHeadPiece(this.getBlockMetadata());
     }
 
-    public ItemStack getItemStack()
+    /*public ItemStack getItemStack()
     {
         return new ItemStack(ItemInit.SARCOPHAGUS_PLACER, 1);
-    }
+    }*/
 }
