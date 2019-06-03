@@ -6,7 +6,7 @@ item.mod_logo.name=Mod Logo
 item.sarcophagus.name=Sarcophagus
 
 //Blocks
-tile.block_sand_spider.name=Spider Sand
+tile.block_sand_spider.name=Infested Sand
 tile.sandy_string.name=Sandy String
 tile.stabilized_sand.name=Binded Sand
 tile.sandstone_wall.name=Sandstone Wall
@@ -38,7 +38,7 @@ entity.mummy.name=Mummy
 item.item.sand_arrow=Sand Arrow
 item.item.sand_bow=Sandy Bow
 item.item.sandy_shirt=Sandy Shirt
-item.tile.block_sand_spider=Spider Sand
+item.tile.block_sand_spider=Infested Sand
 item.tile.sandy_string=Sandy String
 item.tile.stabilized_sand=Binded Sand
 item.item.monsterPlacer=Spawn Egg

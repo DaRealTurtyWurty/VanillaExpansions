@@ -22,6 +22,7 @@ import net.minecraft.util.EnumParticleTypes;
 import net.minecraft.util.Mirror;
 import net.minecraft.util.Rotation;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.math.RayTraceResult;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 import net.minecraftforge.fml.relauncher.Side;
@@ -107,12 +108,18 @@ public class BlockBluestoneRepeater extends BlockBluestoneDiode
      */
     public Item getItemDropped(IBlockState state, Random rand, int fortune)
     {
-        return Item.getItemFromBlock(BlockInit.POWERED_BLUESTONE_REPEATER);
+        return Item.getItemFromBlock(BlockInit.UNLIT_BLUESTONE_REPEATER);
     }
 
     public ItemStack getItem(World worldIn, BlockPos pos, IBlockState state)
     {
-        return new ItemStack(BlockInit.POWERED_BLUESTONE_REPEATER);
+        return new ItemStack(BlockInit.UNLIT_BLUESTONE_REPEATER);
+    }
+    
+    @Override
+    public ItemStack getPickBlock(IBlockState state, RayTraceResult target, World world, BlockPos pos, EntityPlayer player) 
+    {
+    	 return new ItemStack(BlockInit.UNLIT_BLUESTONE_REPEATER);
     }
 
     public boolean isLocked(IBlockAccess worldIn, BlockPos pos, IBlockState state)

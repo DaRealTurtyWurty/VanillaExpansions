@@ -43,7 +43,7 @@ public class BlockInit
 	public static final Block BLUESTONE = new BlockBluestoneWire("bluestone").setCreativeTab(tab);
 	public static final Block BLUESTONE_ORE = new BlockBluestoneOre("bluestone_ore", false).setCreativeTab(tab);
 	public static final Block LIT_BLUESTONE_ORE = new BlockBluestoneOre("lit_bluestone_ore", true).setLightLevel(0.625f);
-	public static final Block UNLIT_BLUESTONE_TORCH = new BlockBluestoneTorch("unlit_bluestone_torch", false);
+	public static final Block UNLIT_BLUESTONE_TORCH = new BlockBluestoneTorch("unlit_bluestone_torch", false).setCreativeTab(null);
 	public static final Block BLUESTONE_TORCH = new BlockBluestoneTorch("bluestone_torch", true).setLightLevel(0.75f).setCreativeTab(tab);
 	public static final Block POWERED_BLUESTONE_REPEATER = new BlockBluestoneRepeater("powered_bluestone_repeater", true).setLightLevel(0.5f);
 	public static final Block UNLIT_BLUESTONE_REPEATER = new BlockBluestoneRepeater("unpowered_bluestone_repeater", false).setCreativeTab(tab);
