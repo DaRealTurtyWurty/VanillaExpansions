@@ -5,10 +5,10 @@ import java.util.List;
 
 import com.turtywurty.vanillaexpansion.VanillaExpansion;
 import com.turtywurty.vanillaexpansion.objects.blocks.desert.BlockSandSpider;
+import com.turtywurty.vanillaexpansion.objects.blocks.desert.BlockSandstoneButton;
 import com.turtywurty.vanillaexpansion.objects.blocks.desert.BlockSandstonePressurePlate;
 import com.turtywurty.vanillaexpansion.objects.blocks.desert.BlockSandstoneWall;
 import com.turtywurty.vanillaexpansion.objects.blocks.desert.BlockSandyString;
-import com.turtywurty.vanillaexpansion.objects.blocks.desert.BlockSarcophagus;
 import com.turtywurty.vanillaexpansion.objects.blocks.desert.BlockSpikeTrap;
 import com.turtywurty.vanillaexpansion.objects.blocks.desert.BlockSpikeTrapDown;
 import com.turtywurty.vanillaexpansion.objects.blocks.desert.BlockStabilizedSand;
@@ -35,8 +35,9 @@ public class BlockInit
 	public static final Block SANDSTONE_WALL = new BlockSandstoneWall("sandstone_wall", Blocks.SANDSTONE).setCreativeTab(tab);
 	public static final Block SPIKE_TRAP = new BlockSpikeTrap("spike_trap").setCreativeTab(tab);
 	public static final Block SPIKE_TRAP_DOWN = new BlockSpikeTrapDown("spike_trap_down");
-	public static final Block SARCOPHAGUS = new BlockSarcophagus("sarcophagus_block");
-	public static final Block SANDSTONE_PRESSUREPLATE = new BlockSandstonePressurePlate("sandstone_pressure_plate", BlockSandstonePressurePlate.Sensitivity.MOBS).setCreativeTab(tab);
+	//public static final Block SARCOPHAGUS = new BlockSarcophagus("sarcophagus_block");
+	public static final Block SANDSTONE_PRESSURE_PLATE = new BlockSandstonePressurePlate("sandstone_pressure_plate", BlockSandstonePressurePlate.Sensitivity.MOBS).setCreativeTab(tab);
+	public static final Block SANDSTONE_BUTTON = new BlockSandstoneButton("sandstone_button", false);
 	
 	//Bluestone
 	public static final Block BLUESTONE = new BlockBluestoneWire("bluestone").setCreativeTab(tab);

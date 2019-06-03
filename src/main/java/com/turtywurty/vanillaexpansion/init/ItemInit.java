@@ -8,8 +8,6 @@ import com.turtywurty.vanillaexpansion.objects.items.ItemBase;
 import com.turtywurty.vanillaexpansion.objects.items.desert.ItemSandArrow;
 import com.turtywurty.vanillaexpansion.objects.items.desert.ItemSandBow;
 import com.turtywurty.vanillaexpansion.objects.items.desert.ItemSandySkeletonShirt;
-import com.turtywurty.vanillaexpansion.objects.items.desert.ItemSarcophagusPlacer;
-import com.turtywurty.vanillaexpansion.objects.items.desert.TestItem;
 import com.turtywurty.vanillaexpansion.util.Reference;
 
 import net.minecraft.creativetab.CreativeTabs;
@@ -29,7 +27,7 @@ public class ItemInit
 	public static final Item SAND_ARROW = new ItemSandArrow("sand_arrow").setCreativeTab(TAB);
 	public static final Item SAND_BOW = new ItemSandBow("sand_bow").setCreativeTab(TAB);
 	public static final Item SANDY_SKELETON_SHIRT = new ItemSandySkeletonShirt("sandy_shirt", SANDY_SHIRT, 1, EntityEquipmentSlot.CHEST).setCreativeTab(TAB);
-	public static final Item SARCOPHAGUS_PLACER = new ItemSarcophagusPlacer("sarcophagus").setCreativeTab(TAB);
+	//public static final Item SARCOPHAGUS_PLACER = new ItemSarcophagusPlacer("sarcophagus").setCreativeTab(TAB);
 	public static final Item MOD_LOGO = new ItemBase("mod_logo");
 	//public static final Item TEST_ITEM = new TestItem("test_item");
 }
