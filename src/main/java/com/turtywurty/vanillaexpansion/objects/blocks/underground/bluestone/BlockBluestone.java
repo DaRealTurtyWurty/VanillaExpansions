@@ -24,7 +24,6 @@ public class BlockBluestone extends Block
 		setResistance(30.0f);
 		setHarvestLevel("pickaxe", 2);
 		setSoundType(SoundType.STONE);
-		setDefaultSlipperiness(0.1f);
 		setLightLevel(0.625f);
 		
 		BlockInit.BLOCKS.add(this);

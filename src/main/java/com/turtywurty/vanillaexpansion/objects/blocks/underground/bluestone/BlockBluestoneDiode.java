@@ -35,7 +35,6 @@ public abstract class BlockBluestoneDiode extends BlockHorizontal
     {
         super(Material.CIRCUITS);
         this.isRepeaterPowered = powered;
-        setDefaultSlipperiness(0.1f);
         setUnlocalizedName(name);
         setRegistryName(name);
         
