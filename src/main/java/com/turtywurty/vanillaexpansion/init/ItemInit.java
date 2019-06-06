@@ -30,4 +30,5 @@ public class ItemInit
 	//public static final Item SARCOPHAGUS_PLACER = new ItemSarcophagusPlacer("sarcophagus").setCreativeTab(TAB);
 	public static final Item MOD_LOGO = new ItemBase("mod_logo");
 	//public static final Item TEST_ITEM = new TestItem("test_item");
+	public static final Item CACTI_JUICE = new ItemBase("cacti_juice");
 }
