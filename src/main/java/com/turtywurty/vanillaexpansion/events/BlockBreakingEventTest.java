@@ -9,7 +9,7 @@ import net.minecraftforge.event.world.BlockEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 
 //@EventBusSubscriber
-public class BlockBreakingEvent 
+public class BlockBreakingEventTest
 {
 	@SubscribeEvent
 	public /*static*/ void breakingBlock(BlockEvent.BreakEvent event)
