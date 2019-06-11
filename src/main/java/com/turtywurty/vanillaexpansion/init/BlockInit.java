@@ -12,6 +12,9 @@ import com.turtywurty.vanillaexpansion.objects.blocks.desert.BlockSandyString;
 import com.turtywurty.vanillaexpansion.objects.blocks.desert.BlockSpikeTrap;
 import com.turtywurty.vanillaexpansion.objects.blocks.desert.BlockSpikeTrapDown;
 import com.turtywurty.vanillaexpansion.objects.blocks.desert.BlockStabilizedSand;
+import com.turtywurty.vanillaexpansion.objects.blocks.underground.BlockGlowingMushroom;
+import com.turtywurty.vanillaexpansion.objects.blocks.underground.BlockHardenedStone;
+import com.turtywurty.vanillaexpansion.objects.blocks.underground.BlockSoftStone;
 import com.turtywurty.vanillaexpansion.objects.blocks.underground.bluestone.BlockBluestone;
 import com.turtywurty.vanillaexpansion.objects.blocks.underground.bluestone.BlockBluestoneComparator;
 import com.turtywurty.vanillaexpansion.objects.blocks.underground.bluestone.BlockBluestoneOre;
@@ -29,6 +32,7 @@ public class BlockInit
 	static CreativeTabs tab = VanillaExpansion.VANILLAEXPANSIONTAB;
 	public static final List<Block> BLOCKS = new ArrayList<Block>();
 	
+	//Desert
 	public static final Block SAND_SPIDER = new BlockSandSpider("block_sand_spider").setCreativeTab(tab);
 	public static final Block SANDY_STRING = new BlockSandyString("sandy_string", Material.WEB).setCreativeTab(tab);
 	public static final Block STABILIZED_SAND = new BlockStabilizedSand("stabilized_sand").setCreativeTab(tab);
@@ -38,6 +42,11 @@ public class BlockInit
 	//public static final Block SARCOPHAGUS = new BlockSarcophagus("sarcophagus_block");
 	public static final Block SANDSTONE_PRESSURE_PLATE = new BlockSandstonePressurePlate("sandstone_pressure_plate", BlockSandstonePressurePlate.Sensitivity.MOBS).setCreativeTab(tab);
 	public static final Block SANDSTONE_BUTTON = new BlockSandstoneButton("sandstone_button", false);
+	
+	//Underground
+	public static final Block HARDENED_STONE = new BlockHardenedStone("hardened_stone", Material.ROCK);
+	public static final Block SOFT_STONE = new BlockSoftStone("soft_stone", Material.ROCK);
+	public static final Block GLOWING_MUSHROOM = new BlockGlowingMushroom("glowing_mushroom");
 	
 	//Bluestone
 	public static final Block BLUESTONE = new BlockBluestoneWire("bluestone").setCreativeTab(tab);

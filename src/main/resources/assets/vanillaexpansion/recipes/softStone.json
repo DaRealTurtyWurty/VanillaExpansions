@@ -1,0 +1,25 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "SCS",
+        "CSC",
+        "SCS"
+    ],
+    "key": {
+        "S": {
+            "item": "minecraft:cobblestone",
+            "data": 0
+        },
+        
+        "C": {
+            "item": "minecraft:clay_ball",
+            "data": 0
+        }
+    },
+
+    "result":
+    {
+        "item": "vanillaexpansion:soft_stone",
+        "count": 5
+    }
+}
