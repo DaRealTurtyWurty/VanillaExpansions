@@ -5,9 +5,12 @@ import java.util.List;
 
 import com.turtywurty.vanillaexpansion.VanillaExpansion;
 import com.turtywurty.vanillaexpansion.objects.items.ItemBase;
+import com.turtywurty.vanillaexpansion.objects.items.desert.ItemCactiJuice;
 import com.turtywurty.vanillaexpansion.objects.items.desert.ItemSandArrow;
 import com.turtywurty.vanillaexpansion.objects.items.desert.ItemSandBow;
 import com.turtywurty.vanillaexpansion.objects.items.desert.ItemSandySkeletonShirt;
+import com.turtywurty.vanillaexpansion.objects.items.underground.ItemGlowingMushroom;
+import com.turtywurty.vanillaexpansion.objects.items.underground.ItemPebble;
 import com.turtywurty.vanillaexpansion.util.Reference;
 
 import net.minecraft.creativetab.CreativeTabs;
@@ -30,5 +33,7 @@ public class ItemInit
 	//public static final Item SARCOPHAGUS_PLACER = new ItemSarcophagusPlacer("sarcophagus").setCreativeTab(TAB);
 	public static final Item MOD_LOGO = new ItemBase("mod_logo");
 	//public static final Item TEST_ITEM = new TestItem("test_item");
-	public static final Item CACTI_JUICE = new ItemBase("cacti_juice");
+	public static final Item CACTI_JUICE = new ItemCactiJuice("cacti_juice").setCreativeTab(TAB).setMaxStackSize(1);
+	public static final Item PEBBLE = new ItemPebble("pebble");
+	public static final Item GLOWING_MUSHROOM = new ItemGlowingMushroom("item_glowing_mushroom", 2, 2, false);
 }

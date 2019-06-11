@@ -4,6 +4,9 @@ item.sand_bow.name=Sandy Bow
 item.sandy_shirt.name=Sandy Shirt
 item.mod_logo.name=Mod Logo
 item.sarcophagus.name=Sarcophagus
+item.cacti_juice.name=Cacti Juice
+item.pebble.name=Pebble
+item.item_glowing_mushroom.name=Glowing Mushroom
 
 //Blocks
 tile.block_sand_spider.name=Infested Sand
@@ -22,6 +25,9 @@ tile.unpowered_bluestone_repeater.name=Bluestone Repeater
 tile.unpowered_bluestone_comparator.name=Bluestone Comparator
 tile.sandstone_pressure_plate.name=Sandstone Pressure Plate
 tile.sandstone_button.name=Sandstone Button
+tile.hardened_stone.name=Hardened Stone
+tile.soft_stone.name=Soft Stone
+tile.glowing_mushroom.name=Glowing Mushroom
 
 //World Types
 generator.Biome Overhaul=Vanilla Expansion
@@ -33,6 +39,7 @@ entity.sand.name=Sandy Arrow
 entity.sand_creeper.name=Sand Creeper
 entity.sand_cat.name=Sand Cat
 entity.mummy.name=Mummy
+entity.pebble.name=Pebble
 
 //Item Tiles
 item.item.sand_arrow=Sand Arrow

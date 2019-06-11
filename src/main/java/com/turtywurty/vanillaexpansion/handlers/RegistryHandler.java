@@ -8,6 +8,7 @@ import com.turtywurty.vanillaexpansion.init.ItemInit;
 import com.turtywurty.vanillaexpansion.init.StructureInit;
 import com.turtywurty.vanillaexpansion.objects.blocks.desert.TileEntitySarcophagus;
 import com.turtywurty.vanillaexpansion.objects.blocks.desert.TileEntitySarcophagusRenderer;
+import com.turtywurty.vanillaexpansion.recipes.CraftingRecipes;
 import com.turtywurty.vanillaexpansion.world.WorldTypeVanillaOverhaul;
 
 import net.minecraft.block.Block;
@@ -75,7 +76,8 @@ public class RegistryHandler
 	
 	public static void initRegistries()
 	{
-		
+		CraftingRecipes.registerRecipes();
+		VanillaExpansion.proxy.render();
 	}
 	
 	public static void postInitRegistries()
