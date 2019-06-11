@@ -1,0 +1,6 @@
+{
+    "parent": "block/cross",
+    "textures": {
+        "cross": "vanillaexpansion:blocks/glowing_mushroom"
+    }
+}
