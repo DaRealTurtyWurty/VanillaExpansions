@@ -1,5 +1,9 @@
 package com.turtywurty.vanillaexpansion.events;
 
+import java.util.HashMap;
+import java.util.Map;
+
+import com.turtywurty.vanillaexpansion.init.BlockInit;
 import com.turtywurty.vanillaexpansion.init.ItemInit;
 
 import net.minecraft.block.Block;
@@ -13,28 +17,45 @@ import net.minecraft.util.EnumHand;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import net.minecraftforge.event.entity.player.PlayerInteractEvent.RightClickBlock;
-import net.minecraftforge.fml.common.Mod.EventBusSubscriber;
+import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 
-@EventBusSubscriber
 public class CactusJuiceEvent 
 {
-	public static void cactusWithBottle(RightClickBlock event)
-	{
-		World worldIn = event.getWorld();
-		BlockPos pos = event.getPos();
-		ItemStack stack = event.getItemStack();
-		IBlockState state = worldIn.getBlockState(pos);
-		Block block = state.getBlock();
-		EntityPlayer playerIn = event.getEntityPlayer();
-		EnumHand handIn = event.getHand();
-		EnumFacing facing = event.getFace();
-		if(block == Blocks.CACTUS && stack.getItem() == Items.GLASS_BOTTLE && handIn == EnumHand.MAIN_HAND)
-		{
-			if(!playerIn.capabilities.isCreativeMode)
-			{
-				stack.shrink(1);
-			}
-			playerIn.addItemStackToInventory(new ItemStack(ItemInit.CACTI_JUICE, 1));
-		}
-	}
+    private int maxAmount = 7;
+    private static Map<BlockPos, Integer> MAP = new HashMap<BlockPos, Integer>();
+    
+    @SubscribeEvent
+    public void cactusWithBottle(RightClickBlock event)
+    {
+        World worldIn = event.getWorld();
+        BlockPos pos = event.getPos();
+        ItemStack stack = event.getItemStack();
+        IBlockState state = worldIn.getBlockState(pos);
+        Block block = state.getBlock();
+        EntityPlayer playerIn = event.getEntityPlayer();
+        EnumHand handIn = event.getHand();
+        EnumFacing facing = event.getFace();
+        if(block == Blocks.CACTUS && stack.getItem() == Items.GLASS_BOTTLE)
+        {
+            if(!MAP.containsKey(pos)) 
+            {
+                MAP.put(pos, maxAmount);
+            }
+            int currentAmount = MAP.get(pos);
+            if(currentAmount == 0)
+            {
+                worldIn.setBlockState(pos, BlockInit.BLUESTONE_BLOCK.getDefaultState());
+                MAP.remove(pos);
+            }
+            else
+            {
+                MAP.put(pos, currentAmount  - 1);
+                if(!playerIn.capabilities.isCreativeMode)
+                {
+                    stack.shrink(1);
+                }
+                playerIn.addItemStackToInventory(new ItemStack(ItemInit.CACTI_JUICE, 1));
+            }
+        }
+    }
 }
