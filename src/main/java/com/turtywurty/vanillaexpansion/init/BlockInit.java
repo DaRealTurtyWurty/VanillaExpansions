@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import com.turtywurty.vanillaexpansion.VanillaExpansion;
+import com.turtywurty.vanillaexpansion.objects.blocks.desert.BlockDrainedCactus;
 import com.turtywurty.vanillaexpansion.objects.blocks.desert.BlockSandSpider;
 import com.turtywurty.vanillaexpansion.objects.blocks.desert.BlockSandstoneButton;
 import com.turtywurty.vanillaexpansion.objects.blocks.desert.BlockSandstonePressurePlate;
@@ -42,6 +43,7 @@ public class BlockInit
 	//public static final Block SARCOPHAGUS = new BlockSarcophagus("sarcophagus_block");
 	public static final Block SANDSTONE_PRESSURE_PLATE = new BlockSandstonePressurePlate("sandstone_pressure_plate", BlockSandstonePressurePlate.Sensitivity.MOBS).setCreativeTab(tab);
 	public static final Block SANDSTONE_BUTTON = new BlockSandstoneButton("sandstone_button", false);
+	public static final Block DRAINED_CACTUS = new BlockDrainedCactus("drained_cactus");
 	
 	//Underground
 	public static final Block HARDENED_STONE = new BlockHardenedStone("hardened_stone", Material.ROCK);

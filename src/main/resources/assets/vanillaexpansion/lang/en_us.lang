@@ -28,6 +28,7 @@ tile.sandstone_button.name=Sandstone Button
 tile.hardened_stone.name=Hardened Stone
 tile.soft_stone.name=Soft Stone
 tile.glowing_mushroom.name=Glowing Mushroom
+tile.drained_cactus.name=Drained Cactus
 
 //World Types
 generator.Biome Overhaul=Vanilla Expansion

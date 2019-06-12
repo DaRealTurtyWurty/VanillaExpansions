@@ -21,41 +21,41 @@ import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 
 public class CactusJuiceEvent 
 {
-    private int maxAmount = 7;
+    private int maxAmount = 8;
     private static Map<BlockPos, Integer> MAP = new HashMap<BlockPos, Integer>();
     
     @SubscribeEvent
     public void cactusWithBottle(RightClickBlock event)
     {
         World worldIn = event.getWorld();
-        BlockPos pos = event.getPos();
-        ItemStack stack = event.getItemStack();
-        IBlockState state = worldIn.getBlockState(pos);
-        Block block = state.getBlock();
-        EntityPlayer playerIn = event.getEntityPlayer();
-        EnumHand handIn = event.getHand();
-        EnumFacing facing = event.getFace();
-        if(block == Blocks.CACTUS && stack.getItem() == Items.GLASS_BOTTLE)
+        if(!worldIn.isRemote)
         {
-            if(!MAP.containsKey(pos)) 
-            {
-                MAP.put(pos, maxAmount);
-            }
-            int currentAmount = MAP.get(pos);
-            if(currentAmount == 0)
-            {
-                worldIn.setBlockState(pos, BlockInit.BLUESTONE_BLOCK.getDefaultState());
-                MAP.remove(pos);
-            }
-            else
-            {
-                MAP.put(pos, currentAmount  - 1);
-                if(!playerIn.capabilities.isCreativeMode)
-                {
-                    stack.shrink(1);
-                }
-                playerIn.addItemStackToInventory(new ItemStack(ItemInit.CACTI_JUICE, 1));
-            }
+        	BlockPos pos = event.getPos();
+        	ItemStack stack = event.getItemStack();
+        	IBlockState state = worldIn.getBlockState(pos);
+        	Block block = state.getBlock();
+        	EntityPlayer playerIn = event.getEntityPlayer();
+        	EnumHand handIn = event.getHand();
+        	EnumFacing facing = event.getFace();
+        	if(block == Blocks.CACTUS && stack.getItem() == Items.GLASS_BOTTLE)
+        	{
+        		if (!MAP.containsKey(pos)) 
+        		{
+        			MAP.put(pos, maxAmount);
+        		}
+        		int currentAmount = MAP.get(pos);
+        		MAP.put(pos, --currentAmount);
+        		if(currentAmount <= 0)
+        		{
+        			worldIn.setBlockState(pos, BlockInit.DRAINED_CACTUS.getDefaultState());
+        			MAP.remove(pos);
+        		}
+        		if(!playerIn.capabilities.isCreativeMode)
+        		{
+        			stack.shrink(1);
+        		}
+        		playerIn.addItemStackToInventory(new ItemStack(ItemInit.CACTI_JUICE, 1));
+        	}
         }
     }
 }

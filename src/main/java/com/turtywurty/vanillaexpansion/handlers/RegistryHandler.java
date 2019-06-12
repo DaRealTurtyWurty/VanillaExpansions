@@ -70,7 +70,6 @@ public class RegistryHandler
 		BiomeInit.registerBiomes();
 		GameRegistry.registerWorldGenerator(new StructureInit(), 0);
 		EntityInit.registerEntities();
-		RenderHandler.registerEntityRenders();
 		EventHandler.registerEvents();
 	}
 	
@@ -82,7 +81,7 @@ public class RegistryHandler
 	
 	public static void postInitRegistries()
 	{
-		WorldType OVERHAUL = new WorldTypeVanillaOverhaul("Biome Overhaul");
+		WorldType OVERHAUL = new WorldTypeVanillaOverhaul("Vanilla Overhaul");
 	}
 	
 	public static void serverInitRegistries()

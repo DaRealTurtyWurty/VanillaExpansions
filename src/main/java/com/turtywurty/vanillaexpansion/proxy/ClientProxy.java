@@ -1,6 +1,7 @@
 package com.turtywurty.vanillaexpansion.proxy;
 
 import com.turtywurty.vanillaexpansion.entity.underground.EntityPebble;
+import com.turtywurty.vanillaexpansion.handlers.RenderHandler;
 import com.turtywurty.vanillaexpansion.init.ItemInit;
 
 import net.minecraft.client.Minecraft;
@@ -24,6 +25,7 @@ public class ClientProxy extends CommonProxy
 	@Override
 	public void render()
 	{
+		RenderHandler.registerEntityRenders();
 		RenderingRegistry.registerEntityRenderingHandler(EntityPebble.class, new RenderSnowball<EntityPebble>(Minecraft.getMinecraft().getRenderManager(), ItemInit.PEBBLE, Minecraft.getMinecraft().getRenderItem()));
 	}
 }
