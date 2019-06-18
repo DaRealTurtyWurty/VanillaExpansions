@@ -29,9 +29,11 @@ tile.hardened_stone.name=Hardened Stone
 tile.soft_stone.name=Soft Stone
 tile.glowing_mushroom.name=Glowing Mushroom
 tile.drained_cactus.name=Drained Cactus
+tile.unknown.name=Unknown Block
+tile.exp_ore.name= Exp Ore
 
 //World Types
-generator.Biome Overhaul=Vanilla Expansion
+generator.Vanilla Overhaul=Vanilla Expansion
 
 //Entities
 entity.sand_spider.name=Sand Spider

@@ -8,7 +8,7 @@ import net.minecraft.world.gen.layer.IntCache;
 
 public class GenLayerOverhaul extends GenLayer
 {
-	private Biome[] allowedBiomes = {BiomeInit.NEW_DESERT, BiomeInit.NEW_PLAINS, BiomeInit.NEW_JUNGLE, BiomeInit.NEW_JUNGLE_EDGE, BiomeInit.NEW_FOREST_BIRCH, BiomeInit.NEW_FOREST_FLOWER, BiomeInit.NEW_FOREST_NORMAL, BiomeInit.NEW_FOREST_ROOFED};
+	private Biome[] allowedBiomes = {BiomeInit.NEW_DESERT, BiomeInit.NEW_PLAINS, BiomeInit.NEW_JUNGLE, BiomeInit.NEW_JUNGLE_EDGE, BiomeInit.NEW_FOREST_BIRCH, BiomeInit.NEW_FOREST_FLOWER, BiomeInit.NEW_FOREST_NORMAL, BiomeInit.NEW_FOREST_ROOFED, BiomeInit.RED_DESERT};
 	public GenLayerOverhaul(long seed) 
 	{
 		super(seed);

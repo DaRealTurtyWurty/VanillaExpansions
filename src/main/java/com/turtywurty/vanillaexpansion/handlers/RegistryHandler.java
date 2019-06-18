@@ -44,7 +44,8 @@ public class RegistryHandler
 	@SubscribeEvent
 	public static void onModelRegister(ModelRegistryEvent event)
 	{
-		ClientRegistry.bindTileEntitySpecialRenderer(TileEntitySarcophagus.class, new TileEntitySarcophagusRenderer());
+		//ClientRegistry.bindTileEntitySpecialRenderer(TileEntitySarcophagus.class, new TileEntitySarcophagusRenderer());
+		RenderHandler.registerEntityRenders();
 		for(Item item : ItemInit.ITEMS)
 		{
 			VanillaExpansion.proxy.registerItemRenderer(item, 0, "inventory");

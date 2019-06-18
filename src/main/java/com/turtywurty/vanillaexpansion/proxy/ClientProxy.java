@@ -25,7 +25,6 @@ public class ClientProxy extends CommonProxy
 	@Override
 	public void render()
 	{
-		RenderHandler.registerEntityRenders();
 		RenderingRegistry.registerEntityRenderingHandler(EntityPebble.class, new RenderSnowball<EntityPebble>(Minecraft.getMinecraft().getRenderManager(), ItemInit.PEBBLE, Minecraft.getMinecraft().getRenderItem()));
 	}
 }

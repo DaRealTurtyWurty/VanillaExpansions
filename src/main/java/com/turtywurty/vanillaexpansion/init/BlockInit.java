@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import com.turtywurty.vanillaexpansion.VanillaExpansion;
+import com.turtywurty.vanillaexpansion.objects.blocks.BlockBase;
 import com.turtywurty.vanillaexpansion.objects.blocks.desert.BlockDrainedCactus;
 import com.turtywurty.vanillaexpansion.objects.blocks.desert.BlockSandSpider;
 import com.turtywurty.vanillaexpansion.objects.blocks.desert.BlockSandstoneButton;
@@ -13,6 +14,7 @@ import com.turtywurty.vanillaexpansion.objects.blocks.desert.BlockSandyString;
 import com.turtywurty.vanillaexpansion.objects.blocks.desert.BlockSpikeTrap;
 import com.turtywurty.vanillaexpansion.objects.blocks.desert.BlockSpikeTrapDown;
 import com.turtywurty.vanillaexpansion.objects.blocks.desert.BlockStabilizedSand;
+import com.turtywurty.vanillaexpansion.objects.blocks.underground.BlockExpOre;
 import com.turtywurty.vanillaexpansion.objects.blocks.underground.BlockGlowingMushroom;
 import com.turtywurty.vanillaexpansion.objects.blocks.underground.BlockHardenedStone;
 import com.turtywurty.vanillaexpansion.objects.blocks.underground.BlockSoftStone;
@@ -49,6 +51,7 @@ public class BlockInit
 	public static final Block HARDENED_STONE = new BlockHardenedStone("hardened_stone", Material.ROCK);
 	public static final Block SOFT_STONE = new BlockSoftStone("soft_stone", Material.ROCK);
 	public static final Block GLOWING_MUSHROOM = new BlockGlowingMushroom("glowing_mushroom");
+	public static final Block EXP_ORE = new BlockExpOre("exp_ore", Material.ROCK);
 	
 	//Bluestone
 	public static final Block BLUESTONE = new BlockBluestoneWire("bluestone").setCreativeTab(tab);
@@ -61,4 +64,7 @@ public class BlockInit
 	public static final Block BLUESTONE_BLOCK = new BlockBluestone("bluestone_block").setCreativeTab(tab);
 	public static final Block BLUESTONE_COMPARATOR = new BlockBluestoneComparator("powered_bluestone_comparator", true).setLightLevel(0.5f);
 	public static final Block UNPOWERED_BLUESTONE_COMPARATOR = new BlockBluestoneComparator("unpowered_bluestone_comparator", true).setCreativeTab(tab);
+	
+	//Random
+	public static final Block UNKNOWN_BLOCK = new BlockBase("unknown");
 }
