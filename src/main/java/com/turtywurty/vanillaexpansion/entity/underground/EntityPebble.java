@@ -1,7 +1,9 @@
 package com.turtywurty.vanillaexpansion.entity.underground;
 
+import net.minecraft.entity.EntityLiving;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.projectile.EntityThrowable;
+import net.minecraft.util.DamageSource;
 import net.minecraft.util.math.RayTraceResult;
 import net.minecraft.world.World;
 
@@ -28,6 +30,10 @@ public class EntityPebble extends EntityThrowable
 		if (!this.world.isRemote) 
 		{
 			setDead();
+			if(result.entityHit instanceof EntityLiving)
+			{
+				result.entityHit.attackEntityFrom(DamageSource.causeThrownDamage(this, this.thrower), rand.nextFloat());
+			}
 		}
 	}
 }

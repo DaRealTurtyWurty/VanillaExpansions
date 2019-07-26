@@ -30,7 +30,7 @@ tile.soft_stone.name=Soft Stone
 tile.glowing_mushroom.name=Glowing Mushroom
 tile.drained_cactus.name=Drained Cactus
 tile.unknown.name=Unknown Block
-tile.exp_ore.name= Exp Ore
+tile.exp_ore.name=Exp Ore
 
 //World Types
 generator.Vanilla Overhaul=Vanilla Expansion

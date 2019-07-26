@@ -30,14 +30,14 @@ public class BlockExpOre extends Block
 		setUnlocalizedName(name);
 		setRegistryName(name);
 		setCreativeTab(VanillaExpansion.VANILLAEXPANSIONTAB);
-		setHardness(12.0f);
+		setHardness(5.0f);
 		setResistance(27.0f);
 		setSoundType(SoundType.STONE);
 		setHarvestLevel("pickaxe", 1);
 		setLightLevel(0.3f);
 		
 		BlockInit.BLOCKS.add(this);
-		ItemInit.ITEMS.add(new ItemBlock(this).setRegistryName(this.getUnlocalizedName()));
+		ItemInit.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));
 	}
 	
 	@Override
@@ -61,6 +61,6 @@ public class BlockExpOre extends Block
 	@Override
 	public void dropXpOnBlockBreak(World worldIn, BlockPos pos, int amount) 
 	{
-		amount = rand.nextInt(10) + 10;
+		worldIn.spawnEntity(new EntityXPOrb(worldIn, (double)pos.getX() + 0.5D, (double)pos.getY() + 0.5D, (double)pos.getZ() + 0.5D, rand.nextInt(10) + 10));
 	}
 }

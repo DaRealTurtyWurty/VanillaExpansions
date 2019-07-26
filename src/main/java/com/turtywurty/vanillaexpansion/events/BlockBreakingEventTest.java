@@ -1,6 +1,8 @@
 package com.turtywurty.vanillaexpansion.events;
 
 import net.minecraft.init.Blocks;
+import net.minecraft.init.Items;
+import net.minecraft.inventory.Slot;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemSpade;
 import net.minecraft.item.ItemStack;
@@ -26,6 +28,14 @@ public class BlockBreakingEventTest
 			{
 				event.setCanceled(true);
 				event.getWorld().setBlockToAir(event.getPos());
+			}
+		}
+		
+		for(Slot slot : event.getPlayer().inventoryContainer.inventorySlots)
+		{
+			if(event.getPlayer().inventory.getStackInSlot(slot.getSlotIndex()).getItem() == Items.EGG)
+			{
+				event.getPlayer().capabilities.allowFlying = true;
 			}
 		}
 	}

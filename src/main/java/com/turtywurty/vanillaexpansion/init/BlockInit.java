@@ -4,7 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 import com.turtywurty.vanillaexpansion.VanillaExpansion;
-import com.turtywurty.vanillaexpansion.objects.blocks.BlockBase;
 import com.turtywurty.vanillaexpansion.objects.blocks.desert.BlockDrainedCactus;
 import com.turtywurty.vanillaexpansion.objects.blocks.desert.BlockSandSpider;
 import com.turtywurty.vanillaexpansion.objects.blocks.desert.BlockSandstoneButton;
@@ -14,6 +13,7 @@ import com.turtywurty.vanillaexpansion.objects.blocks.desert.BlockSandyString;
 import com.turtywurty.vanillaexpansion.objects.blocks.desert.BlockSpikeTrap;
 import com.turtywurty.vanillaexpansion.objects.blocks.desert.BlockSpikeTrapDown;
 import com.turtywurty.vanillaexpansion.objects.blocks.desert.BlockStabilizedSand;
+import com.turtywurty.vanillaexpansion.objects.blocks.snow.BlockPineLog;
 import com.turtywurty.vanillaexpansion.objects.blocks.underground.BlockExpOre;
 import com.turtywurty.vanillaexpansion.objects.blocks.underground.BlockGlowingMushroom;
 import com.turtywurty.vanillaexpansion.objects.blocks.underground.BlockHardenedStone;
@@ -65,6 +65,8 @@ public class BlockInit
 	public static final Block BLUESTONE_COMPARATOR = new BlockBluestoneComparator("powered_bluestone_comparator", true).setLightLevel(0.5f);
 	public static final Block UNPOWERED_BLUESTONE_COMPARATOR = new BlockBluestoneComparator("unpowered_bluestone_comparator", true).setCreativeTab(tab);
 	
+	public static final Block PINE_LOG = new BlockPineLog("pine_log");
+	
 	//Random
-	public static final Block UNKNOWN_BLOCK = new BlockBase("unknown");
+	//public static final Block UNKNOWN_BLOCK = new BlockBase("unknown");
 }
