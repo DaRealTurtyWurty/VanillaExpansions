@@ -21,24 +21,18 @@ import net.minecraft.world.World;
 
 public class BlockPineLog extends BlockRotatedPillar
 {
-	public static final PropertyEnum<BlockPineLog.EnumAxis> LOG_AXIS = PropertyEnum.<BlockPineLog.EnumAxis>create("axis", BlockPineLog.EnumAxis.class);
-	
 	public BlockPineLog(String name) 
 	{
 		super(Material.WOOD);
+		setRegistryName(name);
+		setUnlocalizedName(name);
 		setCreativeTab(VanillaExpansion.VANILLAEXPANSIONTAB);
 		setSoundType(SoundType.WOOD);
 		setHardness(2.0f);
-		this.setDefaultState(this.blockState.getBaseState().withProperty(LOG_AXIS, BlockPineLog.EnumAxis.Y));
 		
-		//BlockInit.BLOCKS.add(this);
-		//ItemInit.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));
+		BlockInit.BLOCKS.add(this);
+		ItemInit.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));
 	}
-	
-	protected BlockStateContainer createBlockState()
-    {
-        return new BlockStateContainer(this, new IProperty[] {LOG_AXIS});
-    }
 	
 	public void breakBlock(World worldIn, BlockPos pos, IBlockState state)
     {
@@ -59,33 +53,6 @@ public class BlockPineLog extends BlockRotatedPillar
         }
     }
 	
-	public IBlockState getStateForPlacement(World worldIn, BlockPos pos, EnumFacing facing, float hitX, float hitY, float hitZ, int meta, EntityLivingBase placer)
-    {
-        return this.getStateFromMeta(meta).withProperty(LOG_AXIS, BlockPineLog.EnumAxis.fromFacingAxis(facing.getAxis()));
-    }
-	
-	public IBlockState withRotation(IBlockState state, Rotation rot)
-    {
-        switch (rot)
-        {
-            case COUNTERCLOCKWISE_90:
-            case CLOCKWISE_90:
-
-                switch ((BlockPineLog.EnumAxis)state.getValue(LOG_AXIS))
-                {
-                    case X:
-                        return state.withProperty(LOG_AXIS, BlockPineLog.EnumAxis.Z);
-                    case Z:
-                        return state.withProperty(LOG_AXIS, BlockPineLog.EnumAxis.X);
-                    default:
-                        return state;
-                }
-
-            default:
-                return state;
-        }
-    }
-	
 	@Override 
 	public boolean canSustainLeaves(IBlockState state, net.minecraft.world.IBlockAccess world, BlockPos pos)
 	{ 
@@ -95,45 +62,5 @@ public class BlockPineLog extends BlockRotatedPillar
     public boolean isWood(net.minecraft.world.IBlockAccess world, BlockPos pos)
     { 
     	return true; 
-    }
-    
-    public static enum EnumAxis implements IStringSerializable
-    {
-        X("x"),
-        Y("y"),
-        Z("z"),
-        NONE("none");
-
-        private final String name;
-
-        private EnumAxis(String name)
-        {
-            this.name = name;
-        }
-
-        public String toString()
-        {
-            return this.name;
-        }
-
-        public static BlockPineLog.EnumAxis fromFacingAxis(EnumFacing.Axis axis)
-        {
-            switch (axis)
-            {
-                case X:
-                    return X;
-                case Y:
-                    return Y;
-                case Z:
-                    return Z;
-                default:
-                    return NONE;
-            }
-        }
-
-        public String getName()
-        {
-            return this.name;
-        }
     }
 }
