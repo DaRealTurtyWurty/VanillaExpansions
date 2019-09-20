@@ -12,13 +12,15 @@ import com.turtywurty.vanillaexpansion.entity.desert.sandSpider.EntitySandSpider
 import com.turtywurty.vanillaexpansion.entity.desert.sandSpider.RenderSandSpider;
 import com.turtywurty.vanillaexpansion.entity.desert.sandySkeleton.EntitySandySkeleton;
 import com.turtywurty.vanillaexpansion.entity.desert.sandySkeleton.RenderSandySkeleton;
+import com.turtywurty.vanillaexpansion.entity.swamp.entityBeaver.EntityBeaver;
+import com.turtywurty.vanillaexpansion.entity.swamp.entityBeaver.RenderBeaver;
+import com.turtywurty.vanillaexpansion.entity.swamp.entityPlatypus.EntityPlatypus;
+import com.turtywurty.vanillaexpansion.entity.swamp.entityPlatypus.RenderPlatypus;
 
 import net.minecraft.client.renderer.entity.Render;
 import net.minecraft.client.renderer.entity.RenderManager;
 import net.minecraftforge.fml.client.registry.IRenderFactory;
 import net.minecraftforge.fml.client.registry.RenderingRegistry;
-import net.minecraftforge.fml.relauncher.Side;
-import net.minecraftforge.fml.relauncher.SideOnly;
 
 public class RenderHandler 
 {
@@ -75,6 +77,24 @@ public class RenderHandler
 			public Render<? super EntityMummy> createRenderFor(RenderManager manager) 
 			{
 				return new RenderMummy(manager);
+			}
+		});
+		
+		RenderingRegistry.registerEntityRenderingHandler(EntityPlatypus.class, new IRenderFactory<EntityPlatypus>() 
+		{
+			@Override
+			public Render<? super EntityPlatypus> createRenderFor(RenderManager manager) 
+			{
+				return new RenderPlatypus(manager);
+			}
+		});
+		
+		RenderingRegistry.registerEntityRenderingHandler(EntityBeaver.class, new IRenderFactory<EntityBeaver>() 
+		{
+			@Override
+			public Render<? super EntityBeaver> createRenderFor(RenderManager manager) 
+			{
+				return new RenderBeaver(manager);
 			}
 		});
 	}

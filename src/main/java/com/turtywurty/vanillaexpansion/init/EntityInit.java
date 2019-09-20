@@ -7,6 +7,8 @@ import com.turtywurty.vanillaexpansion.entity.desert.sandCat.EntitySandCat;
 import com.turtywurty.vanillaexpansion.entity.desert.sandCreeper.EntitySandCreeper;
 import com.turtywurty.vanillaexpansion.entity.desert.sandSpider.EntitySandSpider;
 import com.turtywurty.vanillaexpansion.entity.desert.sandySkeleton.EntitySandySkeleton;
+import com.turtywurty.vanillaexpansion.entity.swamp.entityBeaver.EntityBeaver;
+import com.turtywurty.vanillaexpansion.entity.swamp.entityPlatypus.EntityPlatypus;
 import com.turtywurty.vanillaexpansion.entity.underground.EntityPebble;
 import com.turtywurty.vanillaexpansion.util.Reference;
 
@@ -24,6 +26,8 @@ public class EntityInit
 	public static final int SANDCAT = 436;
 	public static final int MUMMY = 237;
 	public static final int PEBBLE = 238;
+	public static final int PLATYPUS = 239;
+	public static final int BEAVER = 240;
 	
 	public static void registerEntities()
 	{
@@ -34,6 +38,8 @@ public class EntityInit
 		registerEntity("sand_cat", EntitySandCat.class, SANDCAT, 30, 16768619, 16756842);
 		registerEntity("mummy", EntityMummy.class, MUMMY, 30, 16759930, 16767657);
 		registerProjectile("pebble", PEBBLE, EntityPebble.class, ItemInit.PEBBLE);
+		registerEntity("platypus", EntityPlatypus.class, PLATYPUS, 20, 13866586, 11564092);
+		registerEntity("beaver", EntityBeaver.class, BEAVER, 20, 11564092, 9794652);
 	}
 	
 	private static void registerEntity(String name, Class<? extends Entity> entity, int id, int range, int color1, int color2)

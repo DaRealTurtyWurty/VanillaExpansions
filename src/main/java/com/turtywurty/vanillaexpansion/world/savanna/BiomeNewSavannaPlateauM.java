@@ -42,4 +42,10 @@ public class BiomeNewSavannaPlateauM extends BiomeNewSavanna
     {
         this.decorator.decorate(worldIn, rand, this, pos);
     }
+    
+    @Override
+    public int getModdedBiomeGrassColor(int original) 
+    {
+    	return 13229184;
+    }
 }

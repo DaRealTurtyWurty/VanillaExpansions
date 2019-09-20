@@ -5,6 +5,7 @@ import com.turtywurty.vanillaexpansion.world.desert.BiomeRedDesert;
 import com.turtywurty.vanillaexpansion.world.forests.BiomeNewForest;
 import com.turtywurty.vanillaexpansion.world.jungle.BiomeNewJungle;
 import com.turtywurty.vanillaexpansion.world.plains.BiomeNewPlains;
+import com.turtywurty.vanillaexpansion.world.swamp.BiomeNewSwamp;
 
 import net.minecraft.world.biome.Biome;
 import net.minecraftforge.common.BiomeDictionary;
@@ -24,6 +25,7 @@ public class BiomeInit
 	public static final Biome NEW_FOREST_BIRCH = new BiomeNewForest(BiomeNewForest.Type.BIRCH);
 	public static final Biome NEW_FOREST_ROOFED = new BiomeNewForest(BiomeNewForest.Type.ROOFED);
 	public static final Biome RED_DESERT = new BiomeRedDesert();
+	public static final Biome NEW_SWAMP = new BiomeNewSwamp();
 	
 	public static void registerBiomes()
 	{
@@ -36,9 +38,10 @@ public class BiomeInit
 		initBiome(NEW_FOREST_BIRCH, "New Birch Forest", BiomeType.COOL, Type.LUSH, Type.DENSE, Type.FOREST, Type.SPOOKY);
 		initBiome(NEW_FOREST_ROOFED, "New Roofed Forest", BiomeType.COOL, Type.LUSH, Type.DENSE, Type.FOREST, Type.SPOOKY);
 		initBiome(RED_DESERT, "Red Desert", BiomeType.DESERT, Type.HOT, Type.DRY, Type.SANDY);
+		initBiome(NEW_SWAMP, "New Swamp", BiomeType.COOL, Type.SWAMP, Type.WET, Type.SPOOKY, Type.WASTELAND);
 	}
 	
-	private static Biome initBiome(Biome biome, String name, BiomeType 	bType, Type... types)
+	private static Biome initBiome(Biome biome, String name, BiomeType bType, Type... types)
 	{
 		biome.setRegistryName(name);
 		ForgeRegistries.BIOMES.register(biome);

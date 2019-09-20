@@ -67,6 +67,12 @@ public class BiomeNewDesert extends Biome
     }
 	
 	@Override
+	public int getModdedBiomeGrassColor(int original) 
+	{
+		return 14533776;
+	}
+	
+	@Override
 	public int getSkyColorByTemp(float currentTemperature) 
 	{
 		return 26879;

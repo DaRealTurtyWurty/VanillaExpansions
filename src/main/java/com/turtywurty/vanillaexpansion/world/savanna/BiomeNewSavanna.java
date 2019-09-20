@@ -17,7 +17,7 @@ public class BiomeNewSavanna extends Biome
 {
 	private static final WorldGenSavannaTree SAVANNA_TREE = new WorldGenSavannaTree(false);
 
-    public BiomeNewSavanna(Biome.BiomeProperties properties)
+    public BiomeNewSavanna(BiomeProperties properties)
     {
         super(new BiomeProperties("NewSavanna").setBaseHeight(0.5f).setHeightVariation(0.1f).setRainDisabled().setTemperature(0.8f));
         this.spawnableCreatureList.add(new Biome.SpawnListEntry(EntityHorse.class, 1, 2, 6));
@@ -57,5 +57,11 @@ public class BiomeNewSavanna extends Biome
     public Class <? extends Biome > getBiomeClass()
     {
         return BiomeNewSavanna.class;
+    }
+    
+    @Override
+    public int getModdedBiomeGrassColor(int original) 
+    {
+    	return 13234560;
     }
 }

@@ -70,4 +70,11 @@ public class BiomeRedDesert extends Biome
 	{
 		return 26880;
 	}
+	
+	@Override
+	public int getModdedBiomeGrassColor(int original) 
+	{
+		return 16051122;
+	}
+	
 }

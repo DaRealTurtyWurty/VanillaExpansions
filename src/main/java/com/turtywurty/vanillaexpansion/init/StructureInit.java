@@ -42,8 +42,8 @@ public class StructureInit implements IWorldGenerator
 	{
 		ArrayList<Class<?>> classesList = new ArrayList<Class<?>>(Arrays.asList(classes));
 		
-		int x = (chunkX * 16) + random.nextInt(15);
-		int z = (chunkZ * 16) + random.nextInt(15);
+		int x = (chunkX * 16) + random.nextInt(16) + 8;
+		int z = (chunkZ * 16) + random.nextInt(16) + 8;
 		int y = calculateGenerationHeight(world, x, z, topBlock);
 		BlockPos pos = new BlockPos(x, y, z);
 		

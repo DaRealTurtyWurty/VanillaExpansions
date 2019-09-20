@@ -81,6 +81,12 @@ public class BiomeNewJungle extends Biome
     {
         return rand.nextInt(4) == 0 ? new WorldGenTallGrass(BlockTallGrass.EnumType.FERN) : new WorldGenTallGrass(BlockTallGrass.EnumType.GRASS);
     }
+    
+    @Override
+    public int getModdedBiomeGrassColor(int original) 
+    {
+    	return isEdge ? 3604275 : 3604301;
+    }
 
     public void decorate(World worldIn, Random rand, BlockPos pos)
     {
