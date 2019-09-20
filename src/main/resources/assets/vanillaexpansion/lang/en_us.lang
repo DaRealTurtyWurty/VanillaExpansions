@@ -43,6 +43,8 @@ entity.sand_creeper.name=Sand Creeper
 entity.sand_cat.name=Sand Cat
 entity.mummy.name=Mummy
 entity.pebble.name=Pebble
+entity.beaver.name=Beaver
+entity.platypus.name=Platypus
 
 //Item Tiles
 item.item.sand_arrow=Sand Arrow

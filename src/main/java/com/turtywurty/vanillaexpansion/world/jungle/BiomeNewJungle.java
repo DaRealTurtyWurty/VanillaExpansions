@@ -85,7 +85,7 @@ public class BiomeNewJungle extends Biome
     @Override
     public int getModdedBiomeGrassColor(int original) 
     {
-    	return isEdge ? 3604275 : 3604301;
+    	return isEdge ? 3582012 : 3579708;
     }
 
     public void decorate(World worldIn, Random rand, BlockPos pos)

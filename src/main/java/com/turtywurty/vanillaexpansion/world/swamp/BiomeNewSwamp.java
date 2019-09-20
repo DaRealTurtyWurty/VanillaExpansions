@@ -2,6 +2,7 @@ package com.turtywurty.vanillaexpansion.world.swamp;
 
 import java.util.Random;
 
+import com.turtywurty.vanillaexpansion.entity.swamp.entityBeaver.EntityBeaver;
 import com.turtywurty.vanillaexpansion.entity.swamp.entityPlatypus.EntityPlatypus;
 
 import net.minecraft.block.BlockFlower;
@@ -39,6 +40,7 @@ public class BiomeNewSwamp extends BiomeSwamp
         this.decorator.grassPerChunk = 5;
         this.spawnableMonsterList.add(new Biome.SpawnListEntry(EntitySlime.class, 1, 1, 1));
         this.spawnableCreatureList.add(new Biome.SpawnListEntry(EntityPlatypus.class, 10, 1, 3));
+        this.spawnableCreatureList.add(new Biome.SpawnListEntry(EntityBeaver.class, 10, 2, 4));
 	}
 	
 	public WorldGenAbstractTree getRandomTreeFeature(Random rand)
