@@ -1,7 +1,5 @@
 package com.turtywurty.vanillaexpansion.entity.swamp.entityBeaver;
 
-import com.turtywurty.vanillaexpansion.entity.desert.sandCat.EntitySandCat;
-import com.turtywurty.vanillaexpansion.entity.desert.sandCat.ModelSandCat;
 import com.turtywurty.vanillaexpansion.util.Reference;
 
 import net.minecraft.client.renderer.entity.RenderLiving;
@@ -23,6 +21,7 @@ public class RenderBeaver extends RenderLiving<EntityBeaver>
     /**
      * Returns the location of an entity's texture. Doesn't seem to be called unless you call Render.bindEntityTexture.
      */
+    @Override
     protected ResourceLocation getEntityTexture(EntityBeaver entity)
     {
         return BEAVER_TEXTURES;

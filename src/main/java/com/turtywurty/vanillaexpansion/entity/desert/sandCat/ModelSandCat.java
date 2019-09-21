@@ -107,16 +107,4 @@ public class ModelSandCat extends ModelBase
 		modelRenderer.rotateAngleY = y;
 		modelRenderer.rotateAngleZ = z;
 	}
-	
-	@Override
-	public void setRotationAngles(float limbSwing, float limbSwingAmount, float ageInTicks, float netHeadYaw, float headPitch, float scaleFactor, Entity entityIn) 
-	{
-		if(!entityIn.isDead)
-		{
-			Body.rotateAngleY = entityIn.getAdjustedHorizontalFacing().getHorizontalAngle();
-		}
-		Legs.rotateAngleX = (MathHelper.cos(limbSwing) * limbSwingAmount * 0.5f);
-		Head.rotateAngleX = (float)(headPitch * Math.PI/180);
-        Head.rotateAngleY = (float)(netHeadYaw * Math.PI/180);
-	}
 }

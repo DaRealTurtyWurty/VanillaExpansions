@@ -7,6 +7,7 @@ import com.turtywurty.vanillaexpansion.entity.desert.sandCat.EntitySandCat;
 import com.turtywurty.vanillaexpansion.entity.desert.sandCreeper.EntitySandCreeper;
 import com.turtywurty.vanillaexpansion.entity.desert.sandSpider.EntitySandSpider;
 import com.turtywurty.vanillaexpansion.entity.desert.sandySkeleton.EntitySandySkeleton;
+import com.turtywurty.vanillaexpansion.entity.jungle.entityLemur.EntityLemur;
 import com.turtywurty.vanillaexpansion.entity.swamp.entityBeaver.EntityBeaver;
 import com.turtywurty.vanillaexpansion.entity.swamp.entityPlatypus.EntityPlatypus;
 import com.turtywurty.vanillaexpansion.entity.underground.EntityPebble;
@@ -28,6 +29,7 @@ public class EntityInit
 	public static final int PEBBLE = 238;
 	public static final int PLATYPUS = 239;
 	public static final int BEAVER = 240;
+	public static final int LEMUR = 241;
 	
 	public static void registerEntities()
 	{
@@ -40,6 +42,7 @@ public class EntityInit
 		registerProjectile("pebble", PEBBLE, EntityPebble.class, ItemInit.PEBBLE);
 		registerEntity("platypus", EntityPlatypus.class, PLATYPUS, 20, 13866586, 11564092);
 		registerEntity("beaver", EntityBeaver.class, BEAVER, 20, 11564092, 9794652);
+		registerEntity("lemur", EntityLemur.class, LEMUR, 25, 13421781, 16153093);
 	}
 	
 	private static void registerEntity(String name, Class<? extends Entity> entity, int id, int range, int color1, int color2)

@@ -12,6 +12,8 @@ import com.turtywurty.vanillaexpansion.entity.desert.sandSpider.EntitySandSpider
 import com.turtywurty.vanillaexpansion.entity.desert.sandSpider.RenderSandSpider;
 import com.turtywurty.vanillaexpansion.entity.desert.sandySkeleton.EntitySandySkeleton;
 import com.turtywurty.vanillaexpansion.entity.desert.sandySkeleton.RenderSandySkeleton;
+import com.turtywurty.vanillaexpansion.entity.jungle.entityLemur.EntityLemur;
+import com.turtywurty.vanillaexpansion.entity.jungle.entityLemur.RenderLemur;
 import com.turtywurty.vanillaexpansion.entity.swamp.entityBeaver.EntityBeaver;
 import com.turtywurty.vanillaexpansion.entity.swamp.entityBeaver.RenderBeaver;
 import com.turtywurty.vanillaexpansion.entity.swamp.entityPlatypus.EntityPlatypus;
@@ -95,6 +97,15 @@ public class RenderHandler
 			public Render<? super EntityBeaver> createRenderFor(RenderManager manager) 
 			{
 				return new RenderBeaver(manager);
+			}
+		});
+		
+		RenderingRegistry.registerEntityRenderingHandler(EntityLemur.class, new IRenderFactory<EntityLemur>() 
+		{
+			@Override
+			public Render<? super EntityLemur> createRenderFor(RenderManager manager) 
+			{
+				return new RenderLemur(manager);
 			}
 		});
 	}
