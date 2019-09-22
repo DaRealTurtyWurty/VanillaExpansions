@@ -46,6 +46,8 @@ entity.pebble.name=Pebble
 entity.beaver.name=Beaver
 entity.platypus.name=Platypus
 entity.lemur.name=Lemur
+entity.penguin.name=Penguin
+entity.skeeter.name=Swamp Skeeter
 
 //Item Tiles
 item.item.sand_arrow=Sand Arrow

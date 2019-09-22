@@ -1,0 +1,8 @@
+{
+	"entity.mosquito":
+    {
+        "category": "entity",
+        "subtitle": "entity.mosquito",
+        "sounds": [{ "name": "vanillaexpansion:entity/mosquito", "stream": true }]
+    }
+}

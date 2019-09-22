@@ -5,6 +5,7 @@ import com.turtywurty.vanillaexpansion.init.BiomeInit;
 import com.turtywurty.vanillaexpansion.init.BlockInit;
 import com.turtywurty.vanillaexpansion.init.EntityInit;
 import com.turtywurty.vanillaexpansion.init.ItemInit;
+import com.turtywurty.vanillaexpansion.init.SoundInit;
 import com.turtywurty.vanillaexpansion.init.StructureInit;
 import com.turtywurty.vanillaexpansion.objects.blocks.desert.TileEntitySarcophagus;
 import com.turtywurty.vanillaexpansion.objects.blocks.desert.TileEntitySarcophagusRenderer;
@@ -78,6 +79,7 @@ public class RegistryHandler
 	{
 		CraftingRecipes.registerRecipes();
 		VanillaExpansion.proxy.render();
+		SoundInit.registerSounds();
 	}
 	
 	public static void postInitRegistries()

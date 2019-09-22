@@ -12,12 +12,16 @@ import com.turtywurty.vanillaexpansion.entity.desert.sandSpider.EntitySandSpider
 import com.turtywurty.vanillaexpansion.entity.desert.sandSpider.RenderSandSpider;
 import com.turtywurty.vanillaexpansion.entity.desert.sandySkeleton.EntitySandySkeleton;
 import com.turtywurty.vanillaexpansion.entity.desert.sandySkeleton.RenderSandySkeleton;
+import com.turtywurty.vanillaexpansion.entity.ice.penguin.EntityPenguin;
+import com.turtywurty.vanillaexpansion.entity.ice.penguin.RenderPenguin;
 import com.turtywurty.vanillaexpansion.entity.jungle.entityLemur.EntityLemur;
 import com.turtywurty.vanillaexpansion.entity.jungle.entityLemur.RenderLemur;
 import com.turtywurty.vanillaexpansion.entity.swamp.entityBeaver.EntityBeaver;
 import com.turtywurty.vanillaexpansion.entity.swamp.entityBeaver.RenderBeaver;
 import com.turtywurty.vanillaexpansion.entity.swamp.entityPlatypus.EntityPlatypus;
 import com.turtywurty.vanillaexpansion.entity.swamp.entityPlatypus.RenderPlatypus;
+import com.turtywurty.vanillaexpansion.entity.swamp.entitySkeeter.EntitySkeeter;
+import com.turtywurty.vanillaexpansion.entity.swamp.entitySkeeter.RenderSkeeter;
 
 import net.minecraft.client.renderer.entity.Render;
 import net.minecraft.client.renderer.entity.RenderManager;
@@ -106,6 +110,24 @@ public class RenderHandler
 			public Render<? super EntityLemur> createRenderFor(RenderManager manager) 
 			{
 				return new RenderLemur(manager);
+			}
+		});
+		
+		RenderingRegistry.registerEntityRenderingHandler(EntityPenguin.class, new IRenderFactory<EntityPenguin>() 
+		{
+			@Override
+			public Render<? super EntityPenguin> createRenderFor(RenderManager manager) 
+			{
+				return new RenderPenguin(manager);
+			}
+		});
+		
+		RenderingRegistry.registerEntityRenderingHandler(EntitySkeeter.class, new IRenderFactory<EntitySkeeter>() 
+		{
+			@Override
+			public Render<? super EntitySkeeter> createRenderFor(RenderManager manager) 
+			{
+				return new RenderSkeeter(manager);
 			}
 		});
 	}
