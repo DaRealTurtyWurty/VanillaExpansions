@@ -2,8 +2,6 @@ package com.turtywurty.vanillaexpansion.entity.swamp.entitySkeeter;
 
 import java.util.Collection;
 
-import javax.annotation.Nullable;
-
 import com.turtywurty.vanillaexpansion.init.SoundInit;
 import com.turtywurty.vanillaexpansion.util.Reference;
 
@@ -39,7 +37,6 @@ import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.SoundEvent;
 import net.minecraft.util.datafix.DataFixer;
 import net.minecraft.world.World;
-import net.minecraft.world.storage.loot.LootTableList;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
@@ -257,11 +254,11 @@ public class EntitySkeeter extends EntityMob
         return ((float)this.lastActiveTime + (float)(this.timeSinceIgnited - this.lastActiveTime) * p_70831_1_) / (float)(this.fuseTime - 2);
     }
 
-    @Override
+    /*@Override
     protected ResourceLocation getLootTable() 
     {
-    	return new ResourceLocation(Reference.MOD_ID + ":loot_tables/entity/skeeter.json");
-    }
+    	return new ResourceLocation(Reference.MOD_ID + ":loot_tables/entity/skeeter");
+    }*/
 
     /**
      * Returns the current state of skeeter, -1 is idle, 1 is 'in fuse'

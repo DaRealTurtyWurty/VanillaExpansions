@@ -36,4 +36,6 @@ public class ItemInit
 	public static final Item CACTI_JUICE = new ItemCactiJuice("cacti_juice").setCreativeTab(TAB).setMaxStackSize(1);
 	public static final Item PEBBLE = new ItemPebble("pebble");
 	public static final Item GLOWING_MUSHROOM = new ItemGlowingMushroom("item_glowing_mushroom", 2, 2, false);
+	public static final Item MUCK = new ItemBase("muck");
+	public static final Item PELT = new ItemBase("pelt");
 }

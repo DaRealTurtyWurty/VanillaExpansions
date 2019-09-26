@@ -7,6 +7,8 @@ item.sarcophagus.name=Sarcophagus
 item.cacti_juice.name=Cacti Juice
 item.pebble.name=Pebble
 item.item_glowing_mushroom.name=Glowing Mushroom
+item.muck.name=Muck
+item.pelt.name=Pelt
 
 //Blocks
 tile.block_sand_spider.name=Infested Sand
@@ -31,6 +33,7 @@ tile.glowing_mushroom.name=Glowing Mushroom
 tile.drained_cactus.name=Drained Cactus
 tile.unknown.name=Unknown Block
 tile.exp_ore.name=Exp Ore
+tile.pine_log.name=Pine Log
 
 //World Types
 generator.Vanilla Overhaul=Vanilla Expansion

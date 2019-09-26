@@ -1,5 +1,8 @@
 package com.turtywurty.vanillaexpansion.util;
 
+import net.minecraft.util.ResourceLocation;
+import net.minecraft.world.storage.loot.LootTableList;
+
 public class Reference 
 {
 	public static final String MOD_ID = "vanillaexpansion";
