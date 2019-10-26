@@ -1,9 +1,11 @@
 package com.turtywurty.vanillaexpansion.objects.items.desert;
 
+import java.util.List;
 import java.util.Random;
 
 import com.turtywurty.vanillaexpansion.init.ItemInit;
 
+import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.MobEffects;
 import net.minecraft.item.EnumAction;
@@ -12,6 +14,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.potion.Potion;
 import net.minecraft.potion.PotionEffect;
 import net.minecraft.util.DamageSource;
+import net.minecraft.util.text.translation.I18n;
 import net.minecraft.world.World;
 
 public class ItemCactiJuice extends ItemFood

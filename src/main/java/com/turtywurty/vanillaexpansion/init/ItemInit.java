@@ -42,9 +42,9 @@ public class ItemInit
 	public static final Item GLOWING_MUSHROOM = new ItemGlowingMushroom("item_glowing_mushroom", 2, 2, false);
 	public static final Item MUCK = new ItemBase("muck");
 	public static final Item PELT = new ItemBase("pelt");
-	public static final Item KEY = new ItemKey("key");
+	public static final Item KEY = new ItemKey("key").setMaxStackSize(1);
 	public static final Item BOUNCE_BALL = new ItemBounceBall("bouncy_ball");
 	public static final Item BOUNCE_BALL_TELEPORT = new ItemBounceBallTeleport("bouncy_ball_teleport");
 	public static final Item BOUNCE_BALL_TELEPORT2 = new ItemBounceBallTeleport2("bouncy_ball_teleport2");
-	public static final Item CHARRED_BONE = new ItemBase("charred_bone");
+	public static final Item CHARRED_BONE = new ItemBase("charred_bone").setCreativeTab(VanillaExpansion.VANILLAEXPANSIONTAB);
 }
