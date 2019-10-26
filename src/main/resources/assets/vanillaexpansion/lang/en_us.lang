@@ -9,6 +9,10 @@ item.pebble.name=Pebble
 item.item_glowing_mushroom.name=Glowing Mushroom
 item.muck.name=Muck
 item.pelt.name=Pelt
+item.bouncy_ball.name=Bouncy Ball
+item.bouncy_ball_teleport.name=Teleporting Bouncy Ball
+item.bouncy_ball_teleport2.name=Tier 2 Teleporting Bouncy Ball
+item.charred_bone.name=Charred Bone
 
 //Blocks
 tile.block_sand_spider.name=Infested Sand
@@ -51,6 +55,9 @@ entity.platypus.name=Platypus
 entity.lemur.name=Lemur
 entity.penguin.name=Penguin
 entity.skeeter.name=Swamp Skeeter
+entity.bouncy_ball.name=Bouncy Ball
+entity.bouncy_ball_teleport.name=Teleporting Bouncy Ball
+entity.bouncy_ball_teleport2.name=Teleporting Bouncy Ball Tier 2
 
 //Item Tiles
 item.item.sand_arrow=Sand Arrow

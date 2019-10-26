@@ -1,6 +1,9 @@
 package com.turtywurty.vanillaexpansion.init;
 
 import com.turtywurty.vanillaexpansion.VanillaExpansion;
+import com.turtywurty.vanillaexpansion.entity.EntityBounceBall;
+import com.turtywurty.vanillaexpansion.entity.EntityBounceBallTeleport;
+import com.turtywurty.vanillaexpansion.entity.EntityBounceBallTeleport2;
 import com.turtywurty.vanillaexpansion.entity.desert.entityMummy.EntityMummy;
 import com.turtywurty.vanillaexpansion.entity.desert.sandArrow.EntitySandArrow;
 import com.turtywurty.vanillaexpansion.entity.desert.sandCat.EntitySandCat;
@@ -34,6 +37,9 @@ public class EntityInit
 	public static final int LEMUR = 241;
 	public static final int PENGUIN = 242;
 	public static final int SKEETER = 243;
+	public static final int BOUNCY_BALL = 245;
+	public static final int BOUNCY_BALL_TELEPORT = 246;
+	public static final int BOUNCY_BALL_TELEPORT2 = 247;
 	
 	public static void registerEntities()
 	{
@@ -49,6 +55,9 @@ public class EntityInit
 		registerEntity("lemur", EntityLemur.class, LEMUR, 25, 13421781, 16153093);
 		registerEntity("penguin", EntityPenguin.class, PENGUIN, 30, 44, 13487615);
 		registerEntity("skeeter", EntitySkeeter.class, SKEETER, 12, 3408904, 12032);
+		registerProjectile("bouncy_ball", BOUNCY_BALL, EntityBounceBall.class, ItemInit.BOUNCE_BALL);
+		registerProjectile("bouncy_ball_teleport", BOUNCY_BALL_TELEPORT, EntityBounceBallTeleport.class, ItemInit.BOUNCE_BALL_TELEPORT);
+		registerProjectile("bouncy_ball_teleport2", BOUNCY_BALL_TELEPORT2, EntityBounceBallTeleport2.class, ItemInit.BOUNCE_BALL_TELEPORT2);
 	}
 	
 	private static void registerEntity(String name, Class<? extends Entity> entity, int id, int range, int color1, int color2)

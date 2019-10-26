@@ -1,7 +1,9 @@
 package com.turtywurty.vanillaexpansion.proxy;
 
+import com.turtywurty.vanillaexpansion.entity.EntityBounceBall;
+import com.turtywurty.vanillaexpansion.entity.EntityBounceBallTeleport;
+import com.turtywurty.vanillaexpansion.entity.EntityBounceBallTeleport2;
 import com.turtywurty.vanillaexpansion.entity.underground.EntityPebble;
-import com.turtywurty.vanillaexpansion.handlers.RenderHandler;
 import com.turtywurty.vanillaexpansion.init.ItemInit;
 
 import net.minecraft.client.Minecraft;
@@ -26,5 +28,8 @@ public class ClientProxy extends CommonProxy
 	public void render()
 	{
 		RenderingRegistry.registerEntityRenderingHandler(EntityPebble.class, new RenderSnowball<EntityPebble>(Minecraft.getMinecraft().getRenderManager(), ItemInit.PEBBLE, Minecraft.getMinecraft().getRenderItem()));
+		RenderingRegistry.registerEntityRenderingHandler(EntityBounceBall.class, new RenderSnowball<EntityBounceBall>(Minecraft.getMinecraft().getRenderManager(), ItemInit.BOUNCE_BALL, Minecraft.getMinecraft().getRenderItem()));
+		RenderingRegistry.registerEntityRenderingHandler(EntityBounceBallTeleport.class, new RenderSnowball<EntityBounceBallTeleport>(Minecraft.getMinecraft().getRenderManager(), ItemInit.BOUNCE_BALL_TELEPORT, Minecraft.getMinecraft().getRenderItem()));
+		RenderingRegistry.registerEntityRenderingHandler(EntityBounceBallTeleport2.class, new RenderSnowball<EntityBounceBallTeleport2>(Minecraft.getMinecraft().getRenderManager(), ItemInit.BOUNCE_BALL_TELEPORT2, Minecraft.getMinecraft().getRenderItem()));
 	}
 }

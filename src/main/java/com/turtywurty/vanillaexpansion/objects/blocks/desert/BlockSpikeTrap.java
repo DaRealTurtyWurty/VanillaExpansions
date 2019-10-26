@@ -113,11 +113,7 @@ public class BlockSpikeTrap extends Block
 					player.attackEntityFrom(new DamageSourceSpikeTrap("spike_trap", player), 3.0f);
 					worldIn.setBlockState(pos, BlockInit.SPIKE_TRAP_DOWN.getDefaultState());
 				}
-				
-				else
-				{
-					;
-				}
+				return;
 			}
 			
 			else

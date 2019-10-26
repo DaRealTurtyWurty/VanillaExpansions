@@ -1,7 +1,5 @@
 package com.turtywurty.vanillaexpansion.entity.swamp.entityBeaver;
 
-import com.turtywurty.vanillaexpansion.entity.desert.sandCat.EntitySandCat;
-
 import net.minecraft.entity.EntityAgeable;
 import net.minecraft.entity.EntityLiving;
 import net.minecraft.entity.SharedMonsterAttributes;
@@ -10,16 +8,32 @@ import net.minecraft.entity.ai.EntityAISwimming;
 import net.minecraft.entity.ai.EntityAIWander;
 import net.minecraft.entity.ai.EntityAIWatchClosest;
 import net.minecraft.entity.passive.EntityAnimal;
+import net.minecraft.entity.passive.EntityHorse;
+import net.minecraft.entity.passive.HorseArmorType;
 import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.item.ItemStack;
+import net.minecraft.network.datasync.DataParameter;
+import net.minecraft.network.datasync.DataSerializers;
+import net.minecraft.network.datasync.EntityDataManager;
 import net.minecraft.util.datafix.DataFixer;
 import net.minecraft.world.World;
+import net.minecraftforge.fml.relauncher.Side;
+import net.minecraftforge.fml.relauncher.SideOnly;
 
 public class EntityBeaver extends EntityAnimal
 {
+	public static int TYPE;
 	public EntityBeaver(World worldIn) 
 	{
 		super(worldIn);
 		this.setSize(0.6F, 0.7F);
+	}
+	
+	@Override
+	protected void entityInit() 
+	{
+		super.entityInit();
+		TYPE = this.rand.nextInt(2);
 	}
 	
 	@Override

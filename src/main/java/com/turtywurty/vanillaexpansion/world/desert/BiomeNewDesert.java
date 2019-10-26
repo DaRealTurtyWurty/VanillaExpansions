@@ -1,6 +1,5 @@
 package com.turtywurty.vanillaexpansion.world.desert;
 
-import java.util.List;
 import java.util.Random;
 
 import com.turtywurty.vanillaexpansion.entity.desert.sandCat.EntitySandCat;
@@ -9,15 +8,16 @@ import com.turtywurty.vanillaexpansion.entity.desert.sandSpider.EntitySandSpider
 import com.turtywurty.vanillaexpansion.entity.desert.sandySkeleton.EntitySandySkeleton;
 
 import net.minecraft.block.state.IBlockState;
-import net.minecraft.entity.EnumCreatureType;
 import net.minecraft.entity.monster.EntityHusk;
 import net.minecraft.init.Blocks;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import net.minecraft.world.biome.Biome;
+import net.minecraft.world.biome.Biome.BiomeProperties;
+import net.minecraft.world.biome.Biome.SpawnListEntry;
 import net.minecraft.world.gen.feature.WorldGenDesertWells;
 import net.minecraft.world.gen.feature.WorldGenFossils;
-import net.minecraft.world.gen.feature.WorldGenLakes;
+import net.minecraftforge.common.DimensionManager;
 
 public class BiomeNewDesert extends Biome
 {

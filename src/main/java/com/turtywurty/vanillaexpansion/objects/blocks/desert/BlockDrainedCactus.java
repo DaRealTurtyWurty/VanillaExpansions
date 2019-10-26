@@ -24,6 +24,7 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 import net.minecraftforge.common.IPlantable;
+import net.minecraftforge.fluids.FluidStack;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
@@ -70,18 +71,18 @@ public class BlockDrainedCactus extends Block implements IPlantable
 
                 if(net.minecraftforge.common.ForgeHooks.onCropsGrowPre(worldIn, blockpos, state, true))
                 {
-                if (j == 15)
-                {
-                    worldIn.setBlockState(blockpos, this.getDefaultState());
-                    IBlockState iblockstate = state.withProperty(AGE, Integer.valueOf(0));
-                    worldIn.setBlockState(pos, iblockstate, 4);
-                    iblockstate.neighborChanged(worldIn, blockpos, this, pos);
-                }
-                else
-                {
-                    worldIn.setBlockState(pos, state.withProperty(AGE, Integer.valueOf(j + 1)), 4);
-                }
-                net.minecraftforge.common.ForgeHooks.onCropsGrowPost(worldIn, pos, state, worldIn.getBlockState(pos));
+                	if (j == 15)
+                	{
+                		worldIn.setBlockState(blockpos, this.getDefaultState());
+                		IBlockState iblockstate = state.withProperty(AGE, Integer.valueOf(0));
+                		worldIn.setBlockState(pos, iblockstate, 4);
+                		iblockstate.neighborChanged(worldIn, blockpos, this, pos);
+                	}
+                	else
+                	{
+                		worldIn.setBlockState(pos, state.withProperty(AGE, Integer.valueOf(j + 1)), 4);
+                	}
+                	net.minecraftforge.common.ForgeHooks.onCropsGrowPost(worldIn, pos, state, worldIn.getBlockState(pos));
                 }
             }
         }

@@ -5,6 +5,10 @@ import java.util.List;
 
 import com.turtywurty.vanillaexpansion.VanillaExpansion;
 import com.turtywurty.vanillaexpansion.objects.items.ItemBase;
+import com.turtywurty.vanillaexpansion.objects.items.ItemBounceBall;
+import com.turtywurty.vanillaexpansion.objects.items.ItemBounceBallTeleport;
+import com.turtywurty.vanillaexpansion.objects.items.ItemBounceBallTeleport2;
+import com.turtywurty.vanillaexpansion.objects.items.ItemKey;
 import com.turtywurty.vanillaexpansion.objects.items.desert.ItemCactiJuice;
 import com.turtywurty.vanillaexpansion.objects.items.desert.ItemSandArrow;
 import com.turtywurty.vanillaexpansion.objects.items.desert.ItemSandBow;
@@ -38,4 +42,9 @@ public class ItemInit
 	public static final Item GLOWING_MUSHROOM = new ItemGlowingMushroom("item_glowing_mushroom", 2, 2, false);
 	public static final Item MUCK = new ItemBase("muck");
 	public static final Item PELT = new ItemBase("pelt");
+	public static final Item KEY = new ItemKey("key");
+	public static final Item BOUNCE_BALL = new ItemBounceBall("bouncy_ball");
+	public static final Item BOUNCE_BALL_TELEPORT = new ItemBounceBallTeleport("bouncy_ball_teleport");
+	public static final Item BOUNCE_BALL_TELEPORT2 = new ItemBounceBallTeleport2("bouncy_ball_teleport2");
+	public static final Item CHARRED_BONE = new ItemBase("charred_bone");
 }
