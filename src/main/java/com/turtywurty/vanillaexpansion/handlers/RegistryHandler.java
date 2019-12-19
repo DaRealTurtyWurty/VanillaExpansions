@@ -3,22 +3,21 @@ package com.turtywurty.vanillaexpansion.handlers;
 import com.turtywurty.vanillaexpansion.VanillaExpansion;
 import com.turtywurty.vanillaexpansion.init.BiomeInit;
 import com.turtywurty.vanillaexpansion.init.BlockInit;
+import com.turtywurty.vanillaexpansion.init.EnchantmentInit;
 import com.turtywurty.vanillaexpansion.init.EntityInit;
 import com.turtywurty.vanillaexpansion.init.ItemInit;
 import com.turtywurty.vanillaexpansion.init.SoundInit;
 import com.turtywurty.vanillaexpansion.init.StructureInit;
-import com.turtywurty.vanillaexpansion.objects.blocks.desert.TileEntitySarcophagus;
-import com.turtywurty.vanillaexpansion.objects.blocks.desert.TileEntitySarcophagusRenderer;
 import com.turtywurty.vanillaexpansion.recipes.CraftingRecipes;
 import com.turtywurty.vanillaexpansion.world.WorldTypeVanillaOverhaul;
 
 import net.minecraft.block.Block;
+import net.minecraft.enchantment.Enchantment;
 import net.minecraft.item.Item;
 import net.minecraft.world.WorldType;
 import net.minecraftforge.client.event.ModelRegistryEvent;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.event.furnace.FurnaceFuelBurnTimeEvent;
-import net.minecraftforge.fml.client.registry.ClientRegistry;
 import net.minecraftforge.fml.common.Mod.EventBusSubscriber;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.common.registry.GameRegistry;
@@ -32,6 +31,12 @@ public class RegistryHandler
 	public static void onItemRegister(RegistryEvent.Register<Item> event)
 	{
 		event.getRegistry().registerAll(ItemInit.ITEMS.toArray(new Item[0]));
+	}
+	
+	@SubscribeEvent
+	public static void registerEnchant(RegistryEvent.Register<Enchantment> event)
+	{
+		event.getRegistry().registerAll(EnchantmentInit.ENCHANTMENTS.toArray(new Enchantment[0]));
 	}
 
 	@SubscribeEvent

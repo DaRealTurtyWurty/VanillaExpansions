@@ -13,6 +13,7 @@ item.bouncy_ball.name=Bouncy Ball
 item.bouncy_ball_teleport.name=Teleporting Bouncy Ball
 item.bouncy_ball_teleport2.name=Tier 2 Teleporting Bouncy Ball
 item.charred_bone.name=Charred Bone
+item.fertiliser.name=Fertiliser
 
 //Blocks
 tile.block_sand_spider.name=Infested Sand

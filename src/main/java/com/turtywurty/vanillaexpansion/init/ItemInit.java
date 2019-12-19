@@ -8,6 +8,7 @@ import com.turtywurty.vanillaexpansion.objects.items.ItemBase;
 import com.turtywurty.vanillaexpansion.objects.items.ItemBounceBall;
 import com.turtywurty.vanillaexpansion.objects.items.ItemBounceBallTeleport;
 import com.turtywurty.vanillaexpansion.objects.items.ItemBounceBallTeleport2;
+import com.turtywurty.vanillaexpansion.objects.items.ItemFertiliser;
 import com.turtywurty.vanillaexpansion.objects.items.ItemKey;
 import com.turtywurty.vanillaexpansion.objects.items.desert.ItemCactiJuice;
 import com.turtywurty.vanillaexpansion.objects.items.desert.ItemSandArrow;
@@ -47,4 +48,5 @@ public class ItemInit
 	public static final Item BOUNCE_BALL_TELEPORT = new ItemBounceBallTeleport("bouncy_ball_teleport");
 	public static final Item BOUNCE_BALL_TELEPORT2 = new ItemBounceBallTeleport2("bouncy_ball_teleport2");
 	public static final Item CHARRED_BONE = new ItemBase("charred_bone").setCreativeTab(VanillaExpansion.VANILLAEXPANSIONTAB);
-}
+	public static final Item FERTILISER = new ItemFertiliser("fertiliser");
+}	
