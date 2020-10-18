@@ -20,6 +20,7 @@ import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 @EventBusSubscriber
 public class EnderDragonKillEvent 
 {
+	@SuppressWarnings("unlikely-arg-type")
 	@SubscribeEvent
 	public static void killedEvent(LivingDeathEvent event)
 	{
